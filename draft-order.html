@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2026 Fantasy Baseball Draft Order</title>
+  <style>
+    :root {
+      --bg: #f2f6fa;
+      --panel: #ffffff;
+      --text: #102231;
+      --muted: #5d6f7f;
+      --line: #d6dfe8;
+      --accent: #0b6fb7;
+      --link: #1d5f94;
+      --shadow: 0 10px 22px rgba(16, 24, 40, 0.08);
+      --radius: 12px;
+      --li-pad-y: 7px;
+      --team-font-size: 0.92rem;
+      --player-font-size: 0.82rem;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top left, #ffffff 0%, var(--bg) 48%, #e7eef5 100%);
+    }
+    .wrap {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 22px 16px 36px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.35rem, 2.4vw, 1.95rem);
+    }
+    .sub {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .pill {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.74rem;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+    .rounds {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 14px;
+    }
+    .round {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .round h2 {
+      margin: 0;
+      padding: 10px 12px;
+      font-size: 0.95rem;
+      background: #ecf2f8;
+      border-bottom: 1px solid var(--line);
+    }
+    ol {
+      margin: 0;
+      padding: 8px 10px 12px;
+      list-style: none;
+    }
+    li {
+      padding: var(--li-pad-y) 0;
+      padding-left: 8px;
+      padding-right: 8px;
+      border-bottom: 1px dashed #e3e9f0;
+      line-height: 1.2;
+      border-radius: 8px;
+    }
+    li + li {
+      margin-top: 4px;
+    }
+    li:last-child { border-bottom: 0; }
+    li.has-keeper {
+      background: #f3f5f7;
+    }
+    .pick-row {
+      display: grid;
+      grid-template-columns: 42px 14px minmax(0, 1fr) 64px;
+      gap: 8px;
+      align-items: stretch;
+    }
+    .round-pick {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #5c7388;
+      background: #edf3f8;
+      border: 1px solid #d4e0ea;
+      border-radius: 999px;
+      padding: 0 8px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-self: start;
+      align-self: center;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .team-swatch {
+      width: 100%;
+      height: 100%;
+      align-self: stretch;
+      border-radius: 3px;
+      box-shadow: 0 0 0 1px rgba(16, 34, 49, 0.12);
+    }
+    .pick-main {
+      min-width: 0;
+    }
+    .team-name {
+      display: block;
+      font-size: var(--team-font-size);
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+    .overall-cell {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #5c7388;
+      background: #edf3f8;
+      border: 1px solid #d4e0ea;
+      border-radius: 999px;
+      padding: 0 8px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-self: end;
+      align-self: center;
+      margin-top: 1px;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+    .player {
+      display: block;
+      margin-top: 2px;
+      font-size: var(--player-font-size);
+      color: var(--link);
+      overflow-wrap: anywhere;
+    }
+    .player.empty {
+      color: #8c99a6;
+      font-style: italic;
+    }
+    .player a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    .player a:hover { text-decoration: underline; }
+    .legend {
+      margin-top: 14px;
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+    .controls {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: 2fr 1.2fr 1fr auto;
+      gap: 10px;
+      align-items: end;
+      padding: 10px;
+      margin: 0 0 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(3px);
+      box-shadow: var(--shadow);
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-width: 0;
+    }
+    .control-group label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .control-group input,
+    .control-group select {
+      width: 100%;
+      height: 36px;
+      border: 1px solid #cdd8e3;
+      border-radius: 8px;
+      padding: 0 10px;
+      font-size: 0.9rem;
+      color: var(--text);
+      background: #fff;
+    }
+    .control-group select:disabled {
+      background: #eef3f8;
+      color: #8493a0;
+      cursor: not-allowed;
+    }
+    .control-group input:focus,
+    .control-group select:focus,
+    .control-actions button:focus {
+      outline: 2px solid #9ec8eb;
+      outline-offset: 1px;
+      border-color: var(--accent);
+    }
+    .control-actions {
+      display: flex;
+      align-items: end;
+      gap: 8px;
+    }
+    .control-actions button {
+      height: 36px;
+      border: 1px solid #bdd2e4;
+      border-radius: 8px;
+      background: #f2f7fc;
+      color: #0f3f67;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0 12px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .control-actions button:hover {
+      background: #e7f1fa;
+    }
+    .results {
+      grid-column: 1 / -1;
+      font-size: 0.82rem;
+      color: var(--muted);
+      min-height: 1.1rem;
+    }
+    .filter-tags {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      min-height: 1.2rem;
+    }
+    .filter-tag {
+      border: 1px solid #c7d7e6;
+      border-radius: 999px;
+      background: #edf5fc;
+      color: #1b4264;
+      font-size: 0.76rem;
+      padding: 3px 9px;
+      cursor: pointer;
+    }
+    .filter-tag:hover {
+      background: #e4f0fb;
+    }
+    .filter-tag .x {
+      margin-left: 4px;
+      font-weight: 700;
+    }
+    .round {
+      scroll-margin-top: 84px;
+    }
+    .no-results {
+      border: 1px dashed #bfd1e2;
+      border-radius: var(--radius);
+      background: #f8fbfe;
+      padding: 18px;
+      color: #3e556a;
+      text-align: center;
+    }
+    .no-results p {
+      margin: 0 0 10px;
+    }
+    .no-results button {
+      height: 34px;
+      border: 1px solid #bdd2e4;
+      border-radius: 8px;
+      background: #f2f7fc;
+      color: #0f3f67;
+      font-size: 0.84rem;
+      font-weight: 600;
+      padding: 0 12px;
+      cursor: pointer;
+    }
+    mark {
+      background: #ffef9c;
+      color: inherit;
+      border-radius: 3px;
+      padding: 0 1px;
+    }
+    body.density-compact {
+      --li-pad-y: 4px;
+      --team-font-size: 0.84rem;
+      --player-font-size: 0.75rem;
+    }
+    body.density-compact .round h2 {
+      padding: 8px 10px;
+      font-size: 0.88rem;
+    }
+    @media (max-width: 900px) {
+      .controls {
+        grid-template-columns: 1fr 1fr;
+      }
+      .control-actions {
+        grid-column: 1 / -1;
+      }
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 14px 10px 24px; }
+      .controls {
+        position: static;
+        grid-template-columns: 1fr;
+      }
+      .control-actions {
+        grid-column: auto;
+      }
+      .rounds { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>2026 Fantasy Baseball Draft Order <span class="pill">From 2026.xlsx</span></h1>
+    <p class="sub">Round order, traded picks, players, and player links are sourced from the spreadsheet.</p>
+
+    <section class="controls" aria-label="Draft filters">
+      <div class="control-group">
+        <label for="searchInput">Search</label>
+        <input id="searchInput" type="search" placeholder="Search player or team" autocomplete="off" />
+      </div>
+      <div class="control-group">
+        <label for="teamSelect">Team</label>
+        <select id="teamSelect">
+          <option value="">All teams</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="viewSelect">Sort mode</label>
+        <select id="viewSelect">
+          <option value="round">By Round</option>
+          <option value="team">By Team Timeline</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="roundSelect">Round jump</label>
+        <select id="roundSelect">
+          <option value="">Select round</option>
+        </select>
+      </div>
+      <div class="control-actions">
+        <button id="densityBtn" type="button" aria-pressed="false">Compact view</button>
+        <button id="clearBtn" type="button">Clear filters</button>
+      </div>
+      <div id="resultsSummary" class="results" aria-live="polite"></div>
+      <div id="activeFilters" class="filter-tags" aria-live="polite"></div>
+    </section>
+
+    <section id="rounds" class="rounds" aria-label="Draft order by round"></section>
+    <p class="legend">Team names are expanded from the truncated labels in the workbook.</p>
+  </main>
+
+  <script>
+    const rounds = [{"round": 1, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "Kyle Tucker (LAD - OF)", "url": "https://sports.yahoo.com/mlb/players/10480"}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "Shohei Ohtani (Batter) (LAD - Util)", "url": "https://sports.yahoo.com/mlb/players/10835"}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "Juan Soto (NYM - OF)", "url": "https://sports.yahoo.com/mlb/players/10626"}, {"pick": 9, "team": "Sacrifice Blunts", "player": "Aaron Judge (NYY - OF)", "url": "https://sports.yahoo.com/mlb/players/9877"}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 2, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "Ronald Acu\u00f1a Jr. (ATL - OF)", "url": "https://sports.yahoo.com/mlb/players/10646"}, {"pick": 5, "team": "Panik at the Frisco", "player": "Vladimir Guerrero Jr. (TOR - 1B)", "url": "https://sports.yahoo.com/mlb/players/10621"}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "Jos\u00e9 Ram\u00edrez (CLE - 3B)", "url": "https://sports.yahoo.com/mlb/players/9507"}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 3, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "Kyle Schwarber (PHI - OF)", "url": "https://sports.yahoo.com/mlb/players/9861"}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "Tarik Skubal (DET - SP)", "url": "https://sports.yahoo.com/mlb/players/11763"}]}, {"round": 4, "picks": [{"pick": 1, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "Jacob deGrom (TEX - SP)", "url": "https://sports.yahoo.com/mlb/players/9701"}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "Yoshinobu Yamamoto (LAD - SP)", "url": "https://sports.yahoo.com/mlb/players/63423"}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "Josh Naylor (SEA - 1B)", "url": "https://sports.yahoo.com/mlb/players/10572"}]}, {"round": 5, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Dog Days", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "Logan Webb (SF - SP)", "url": "https://sports.yahoo.com/mlb/players/11235"}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 6, "picks": [{"pick": 1, "team": "Dog Days", "player": "Jacob Misiorowski (MIL - SP)", "url": "https://sports.yahoo.com/mlb/players/60254"}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 7, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "Bryan Woo (SEA - SP)", "url": "https://sports.yahoo.com/mlb/players/60584"}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "Max Fried (NYY - SP)", "url": "https://sports.yahoo.com/mlb/players/9620"}, {"pick": 8, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 8, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "Nolan McLean (NYM - SP)", "url": "https://sports.yahoo.com/mlb/players/62935"}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "Ben Rice (NYY - C,1B)", "url": "https://sports.yahoo.com/mlb/players/62137"}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 9, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "Spencer Strider (ATL - SP)", "url": "https://sports.yahoo.com/mlb/players/12281"}, {"pick": 6, "team": "Return of ThePollock", "player": "Pete Crow-Armstrong (CHC - OF)", "url": "https://sports.yahoo.com/mlb/players/12157"}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "Vinnie Pasquantino (KC - 1B)", "url": "https://sports.yahoo.com/mlb/players/12449"}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 10, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "Luke Keaschall (MIN - 2B)", "url": "https://sports.yahoo.com/mlb/players/63023"}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 11, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "Brice Turang (MIL - 2B)", "url": "https://sports.yahoo.com/mlb/players/11343"}, {"pick": 4, "team": "Bleacher Bums", "player": "Dylan Crews (WSH - OF)", "url": "https://sports.yahoo.com/mlb/players/62971"}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "Andy Pages (LAD - OF)", "url": "https://sports.yahoo.com/mlb/players/12148"}]}, {"round": 12, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "Matt McLain (CIN - 2B)", "url": "https://sports.yahoo.com/mlb/players/12390"}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "Cristopher S\u00e1nchez (PHI - SP)", "url": "https://sports.yahoo.com/mlb/players/11706"}, {"pick": 9, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "Trevor Rogers (BAL - SP)", "url": "https://sports.yahoo.com/mlb/players/10909"}, {"pick": 11, "team": "Latos Intolerant", "player": "Eugenio Su\u00e1rez (CIN - 3B)", "url": "https://sports.yahoo.com/mlb/players/9724"}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 13, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "Jarren Duran (BOS - OF)", "url": "https://sports.yahoo.com/mlb/players/11735"}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "itchy", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 14, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "Cade Horton (CHC - SP)", "url": "https://sports.yahoo.com/mlb/players/60118"}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 15, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "Zach Neto (LAA - SS)", "url": "https://sports.yahoo.com/mlb/players/60214"}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Dog Days", "player": "", "url": ""}, {"pick": 5, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 16, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "Alec Burleson (STL - 1B,OF)", "url": "https://sports.yahoo.com/mlb/players/12550"}, {"pick": 6, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "itchy", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 17, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "Brent Rooker (ATH - OF)", "url": "https://sports.yahoo.com/mlb/players/10917"}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "Roman Anthony (BOS - OF)", "url": "https://sports.yahoo.com/mlb/players/60108"}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 18, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "Trent Grisham (NYY - OF)", "url": "https://sports.yahoo.com/mlb/players/10522"}, {"pick": 3, "team": "itchy", "player": "James Wood (WSH - OF)", "url": "https://sports.yahoo.com/mlb/players/12521"}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "Shohei Ohtani (Pitcher) (LAD - SP)", "url": "https://sports.yahoo.com/mlb/players/10835"}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 19, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "Jes\u00fas Luzardo (PHI - SP)", "url": "https://sports.yahoo.com/mlb/players/10627"}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "itchy", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pitches Be Crazy", "player": "Garrett Crochet (BOS - SP)", "url": "https://sports.yahoo.com/mlb/players/12046"}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 20, "picks": [{"pick": 1, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "Paul Skenes (PIT - SP)", "url": "https://sports.yahoo.com/mlb/players/62972"}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 21, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 22, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "Junior Caminero (TB - 3B)", "url": "https://sports.yahoo.com/mlb/players/60419"}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 23, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "Tyler Soderstrom (ATH - 1B,OF)", "url": "https://sports.yahoo.com/mlb/players/12005"}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "Jacob Wilson (ATH - SS)", "url": "https://sports.yahoo.com/mlb/players/62976"}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "Drew Rasmussen (TB - SP)", "url": "https://sports.yahoo.com/mlb/players/11789"}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 24, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 25, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "Bubba Chandler (PIT - SP)", "url": "https://sports.yahoo.com/mlb/players/12516"}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "Jac Caglianone (KC - 1B,OF)", "url": "https://sports.yahoo.com/mlb/players/64312"}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}];
+    const roundsEl = document.getElementById('rounds');
+    const searchInput = document.getElementById('searchInput');
+    const teamSelect = document.getElementById('teamSelect');
+    const viewSelect = document.getElementById('viewSelect');
+    const roundSelect = document.getElementById('roundSelect');
+    const densityBtn = document.getElementById('densityBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const resultsSummary = document.getElementById('resultsSummary');
+    const activeFilters = document.getElementById('activeFilters');
+
+    const totalPicks = rounds.reduce((sum, round) => sum + round.picks.length, 0);
+    const picksPerRound = Math.max(...rounds.map((round) => round.picks.length));
+    const uniqueTeams = [...new Set(rounds.flatMap((round) => round.picks.map((pick) => pick.team)))].sort();
+    const TEAM_PALETTE = [
+      '#0f4c81', // deep blue
+      '#d1495b', // red
+      '#2a9d8f', // teal
+      '#7b2cbf', // violet
+      '#f77f00', // orange
+      '#3a86ff', // bright blue
+      '#8d6e63', // brown
+      '#6a994e', // green
+      '#ef476f', // pink-red
+      '#1f7a8c', // cyan-teal
+      '#8338ec', // purple
+      '#bc6c25'  // amber-brown
+    ];
+    const teamColorByName = new Map(
+      uniqueTeams.map((team, idx) => [team, TEAM_PALETTE[idx % TEAM_PALETTE.length]])
+    );
+
+    uniqueTeams.forEach((team) => {
+      const option = document.createElement('option');
+      option.value = team;
+      option.textContent = team;
+      teamSelect.appendChild(option);
+    });
+
+    rounds.forEach((round) => {
+      const option = document.createElement('option');
+      option.value = String(round.round);
+      option.textContent = `Round ${round.round}`;
+      roundSelect.appendChild(option);
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    const savedDensity = localStorage.getItem('draftDensity');
+    const state = {
+      q: (params.get('q') || '').trim(),
+      team: '',
+      view: 'round',
+      round: '',
+      density: savedDensity === 'compact' ? 'compact' : 'comfortable'
+    };
+
+    const paramTeam = params.get('team') || '';
+    if (uniqueTeams.includes(paramTeam)) {
+      state.team = paramTeam;
+    }
+
+    const paramRound = params.get('round') || '';
+    if (/^\d+$/.test(paramRound)) {
+      const roundNum = Number(paramRound);
+      if (roundNum >= 1 && roundNum <= rounds.length) {
+        state.round = String(roundNum);
+      }
+    }
+
+    const paramView = params.get('view') || '';
+    if (paramView === 'round' || paramView === 'team') {
+      state.view = paramView;
+    }
+
+    searchInput.value = state.q;
+    teamSelect.value = state.team;
+    viewSelect.value = state.view;
+    roundSelect.value = state.round;
+    document.body.classList.toggle('density-compact', state.density === 'compact');
+    densityBtn.setAttribute('aria-pressed', String(state.density === 'compact'));
+    densityBtn.textContent = state.density === 'compact' ? 'Comfortable view' : 'Compact view';
+
+    function syncRoundControl() {
+      const disabled = state.view === 'team';
+      roundSelect.disabled = disabled;
+      if (disabled) {
+        state.round = '';
+        roundSelect.value = '';
+      } else {
+        roundSelect.value = state.round;
+      }
+    }
+
+    syncRoundControl();
+
+    function escapeRegExp(value) {
+      return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function teamColor(teamName) {
+      return teamColorByName.get(teamName) || '#7f94a7';
+    }
+
+    function getOverallPick(roundNumber, pickNumber) {
+      return ((roundNumber - 1) * picksPerRound) + pickNumber;
+    }
+
+    function resetFilters() {
+      state.q = '';
+      state.team = '';
+      state.round = '';
+      searchInput.value = '';
+      teamSelect.value = '';
+      roundSelect.value = '';
+    }
+
+    function renderFilterTags() {
+      activeFilters.innerHTML = '';
+
+      const tags = [];
+      if (state.q) {
+        tags.push({ key: 'q', label: `Search: ${state.q}` });
+      }
+      if (state.team) {
+        tags.push({ key: 'team', label: `Team: ${state.team}` });
+      }
+      if (state.view === 'team') {
+        tags.push({ key: 'view', label: 'Mode: Team Timeline' });
+      }
+      if (state.round) {
+        tags.push({ key: 'round', label: `Round: ${state.round}` });
+      }
+
+      tags.forEach((tag) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'filter-tag';
+        btn.setAttribute('aria-label', `Remove ${tag.label} filter`);
+        btn.innerHTML = `${tag.label}<span class="x">×</span>`;
+        btn.addEventListener('click', () => {
+          if (tag.key === 'q') {
+            state.q = '';
+            searchInput.value = '';
+          } else if (tag.key === 'team') {
+            state.team = '';
+            teamSelect.value = '';
+          } else if (tag.key === 'view') {
+            state.view = 'round';
+            viewSelect.value = 'round';
+            syncRoundControl();
+          } else if (tag.key === 'round') {
+            state.round = '';
+            roundSelect.value = '';
+          }
+          applyAndRender();
+        });
+        activeFilters.appendChild(btn);
+      });
+    }
+
+    function appendHighlightedText(parent, text, query) {
+      if (!query) {
+        parent.textContent = text;
+        return;
+      }
+
+      const regex = new RegExp(escapeRegExp(query), 'ig');
+      let lastIndex = 0;
+      let match;
+
+      while ((match = regex.exec(text)) !== null) {
+        if (match.index > lastIndex) {
+          parent.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+        }
+        const mark = document.createElement('mark');
+        mark.textContent = text.slice(match.index, match.index + match[0].length);
+        parent.appendChild(mark);
+        lastIndex = match.index + match[0].length;
+      }
+
+      if (lastIndex < text.length) {
+        parent.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+    }
+
+    function buildPickRow(pick, roundNumber, query) {
+      const item = document.createElement('li');
+      item.className = 'pick-row';
+      if (pick.player) {
+        item.classList.add('has-keeper');
+      }
+
+      const roundPick = document.createElement('span');
+      roundPick.className = 'round-pick';
+      roundPick.textContent = `${pick.pick}`;
+
+      const swatch = document.createElement('span');
+      swatch.className = 'team-swatch';
+      swatch.style.background = teamColor(pick.team);
+
+      const main = document.createElement('div');
+      main.className = 'pick-main';
+
+      const teamName = document.createElement('span');
+      teamName.className = 'team-name';
+      appendHighlightedText(teamName, pick.team, query);
+
+      const player = document.createElement('span');
+      player.className = pick.player ? 'player' : 'player empty';
+      if (pick.player) {
+        if (pick.url) {
+          const a = document.createElement('a');
+          a.href = pick.url;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          appendHighlightedText(a, pick.player, query);
+          player.appendChild(a);
+        } else {
+          appendHighlightedText(player, pick.player, query);
+        }
+      } else {
+        player.textContent = 'Open pick';
+      }
+
+      const overall = document.createElement('span');
+      overall.className = 'overall-cell';
+      overall.textContent = `#${getOverallPick(roundNumber, pick.pick)}`;
+
+      main.appendChild(teamName);
+      main.appendChild(player);
+      item.appendChild(roundPick);
+      item.appendChild(swatch);
+      item.appendChild(main);
+      item.appendChild(overall);
+
+      return item;
+    }
+
+    function matchesPick(pick, qLower, selectedTeam) {
+      const teamMatches = !selectedTeam || pick.team === selectedTeam;
+      if (!teamMatches) {
+        return false;
+      }
+
+      if (!qLower) {
+        return true;
+      }
+
+      return pick.team.toLowerCase().includes(qLower) || pick.player.toLowerCase().includes(qLower);
+    }
+
+    function updateUrl() {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('q');
+      url.searchParams.delete('team');
+      url.searchParams.delete('view');
+      url.searchParams.delete('round');
+
+      if (state.q) {
+        url.searchParams.set('q', state.q);
+      }
+      if (state.team) {
+        url.searchParams.set('team', state.team);
+      }
+      if (state.view === 'team') {
+        url.searchParams.set('view', 'team');
+      }
+      if (state.view === 'round' && state.round) {
+        url.searchParams.set('round', state.round);
+      }
+
+      history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+    }
+
+    function scrollToRound(roundValue) {
+      if (!roundValue) {
+        return;
+      }
+      const target = document.getElementById(`round-${roundValue}`);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function render() {
+      roundsEl.innerHTML = '';
+
+      const q = state.q;
+      const qLower = q.toLowerCase();
+      const selectedTeam = state.team;
+      let shownPicks = 0;
+      let shownTeamPicks = 0;
+
+      if (state.view === 'round') {
+        rounds.forEach((round) => {
+          const filtered = round.picks.filter((pick) => matchesPick(pick, qLower, selectedTeam));
+          if (filtered.length === 0) {
+            return;
+          }
+
+          const card = document.createElement('article');
+          card.className = 'round';
+          card.id = `round-${round.round}`;
+
+          const h2 = document.createElement('h2');
+          h2.textContent = `Round ${round.round}`;
+          card.appendChild(h2);
+
+          const list = document.createElement('ol');
+
+          filtered.forEach((pick) => {
+            shownPicks += 1;
+            if (selectedTeam && pick.team === selectedTeam) {
+              shownTeamPicks += 1;
+            }
+            list.appendChild(buildPickRow(pick, round.round, q));
+          });
+
+          card.appendChild(list);
+          roundsEl.appendChild(card);
+        });
+      } else {
+        const teamsToRender = selectedTeam ? [selectedTeam] : uniqueTeams;
+
+        teamsToRender.forEach((teamName) => {
+          const timelinePicks = [];
+          rounds.forEach((round) => {
+            round.picks.forEach((pick) => {
+              if (pick.team !== teamName) {
+                return;
+              }
+              const matchesQuery = !qLower
+                || pick.team.toLowerCase().includes(qLower)
+                || pick.player.toLowerCase().includes(qLower);
+              if (!matchesQuery) {
+                return;
+              }
+              timelinePicks.push({ ...pick, round: round.round });
+            });
+          });
+
+          timelinePicks.sort((a, b) => (a.round - b.round) || (a.pick - b.pick));
+          if (timelinePicks.length === 0) {
+            return;
+          }
+
+          const card = document.createElement('article');
+          card.className = 'round';
+          card.id = `team-${teamName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+
+          const h2 = document.createElement('h2');
+          h2.textContent = teamName;
+          h2.style.borderLeft = `4px solid ${teamColor(teamName)}`;
+          h2.style.paddingLeft = '10px';
+          card.appendChild(h2);
+
+          const list = document.createElement('ol');
+          timelinePicks.forEach((pick) => {
+            shownPicks += 1;
+            if (selectedTeam && pick.team === selectedTeam) {
+              shownTeamPicks += 1;
+            }
+            list.appendChild(buildPickRow(pick, pick.round, q));
+          });
+
+          card.appendChild(list);
+          roundsEl.appendChild(card);
+        });
+      }
+
+      if (shownPicks === 0) {
+        const empty = document.createElement('div');
+        empty.className = 'no-results';
+        empty.innerHTML = '<p>No picks match the current filters.</p>';
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = 'Reset filters';
+        btn.addEventListener('click', () => {
+          resetFilters();
+          applyAndRender();
+        });
+        empty.appendChild(btn);
+        roundsEl.appendChild(empty);
+      }
+
+      let summary = `Showing ${shownPicks} of ${totalPicks} picks`;
+      if (selectedTeam) {
+        summary += ` · ${selectedTeam}: ${shownTeamPicks} picks`;
+      }
+      if (state.view === 'round' && state.round && !document.getElementById(`round-${state.round}`)) {
+        summary += ` · Round ${state.round} hidden by current filters`;
+      }
+      resultsSummary.textContent = summary;
+      renderFilterTags();
+    }
+
+    function applyAndRender() {
+      updateUrl();
+      render();
+    }
+
+    searchInput.addEventListener('input', () => {
+      state.q = searchInput.value.trim();
+      applyAndRender();
+    });
+
+    teamSelect.addEventListener('change', () => {
+      state.team = teamSelect.value;
+      applyAndRender();
+    });
+
+    viewSelect.addEventListener('change', () => {
+      state.view = viewSelect.value;
+      if (state.view === 'team') {
+        state.round = '';
+      }
+      syncRoundControl();
+      applyAndRender();
+    });
+
+    roundSelect.addEventListener('change', () => {
+      if (state.view !== 'round') {
+        return;
+      }
+      state.round = roundSelect.value;
+      updateUrl();
+      scrollToRound(state.round);
+      renderFilterTags();
+    });
+
+    densityBtn.addEventListener('click', () => {
+      state.density = state.density === 'compact' ? 'comfortable' : 'compact';
+      document.body.classList.toggle('density-compact', state.density === 'compact');
+      densityBtn.setAttribute('aria-pressed', String(state.density === 'compact'));
+      densityBtn.textContent = state.density === 'compact' ? 'Comfortable view' : 'Compact view';
+      localStorage.setItem('draftDensity', state.density);
+    });
+
+    clearBtn.addEventListener('click', () => {
+      resetFilters();
+      applyAndRender();
+    });
+
+    render();
+    if (state.round) {
+      setTimeout(() => scrollToRound(state.round), 0);
+    }
+  </script>
+</body>
+</html>
