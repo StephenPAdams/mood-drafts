@@ -205,6 +205,31 @@
       color: var(--text);
       background: #fff;
     }
+    .keepers-group .keepers-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      height: 36px;
+      border: 1px solid #cdd8e3;
+      border-radius: 8px;
+      padding: 0 10px;
+      background: #fff;
+      font-size: 0.84rem;
+      color: #3f5669;
+      user-select: none;
+      cursor: pointer;
+    }
+    .keepers-group .keepers-toggle:focus-within {
+      outline: 2px solid #9ec8eb;
+      outline-offset: 1px;
+      border-color: var(--accent);
+    }
+    .keepers-group .keepers-toggle input {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+      accent-color: #0b6fb7;
+    }
     .control-group select:disabled {
       background: #eef3f8;
       color: #8493a0;
@@ -356,6 +381,13 @@
           <option value="">Select round</option>
         </select>
       </div>
+      <div class="control-group keepers-group">
+        <label for="keepersOnly">Keepers</label>
+        <label class="keepers-toggle" for="keepersOnly">
+          <input id="keepersOnly" type="checkbox" />
+          <span>Keepers only</span>
+        </label>
+      </div>
       <div class="control-actions">
         <button id="densityBtn" type="button" aria-pressed="false">Compact view</button>
         <button id="clearBtn" type="button">Clear filters</button>
@@ -375,6 +407,7 @@
     const teamSelect = document.getElementById('teamSelect');
     const viewSelect = document.getElementById('viewSelect');
     const roundSelect = document.getElementById('roundSelect');
+    const keepersOnlyInput = document.getElementById('keepersOnly');
     const densityBtn = document.getElementById('densityBtn');
     const clearBtn = document.getElementById('clearBtn');
     const resultsSummary = document.getElementById('resultsSummary');
@@ -422,6 +455,7 @@
       team: '',
       view: 'round',
       round: '',
+      keepersOnly: params.get('keepers') === '1',
       density: savedDensity === 'compact' ? 'compact' : 'comfortable'
     };
 
@@ -447,6 +481,7 @@
     teamSelect.value = state.team;
     viewSelect.value = state.view;
     roundSelect.value = state.round;
+    keepersOnlyInput.checked = state.keepersOnly;
     document.body.classList.toggle('density-compact', state.density === 'compact');
     densityBtn.setAttribute('aria-pressed', String(state.density === 'compact'));
     densityBtn.textContent = state.density === 'compact' ? 'Comfortable view' : 'Compact view';
@@ -480,9 +515,11 @@
       state.q = '';
       state.team = '';
       state.round = '';
+      state.keepersOnly = false;
       searchInput.value = '';
       teamSelect.value = '';
       roundSelect.value = '';
+      keepersOnlyInput.checked = false;
     }
 
     function renderFilterTags() {
@@ -497,6 +534,9 @@
       }
       if (state.view === 'team') {
         tags.push({ key: 'view', label: 'Mode: Team Timeline' });
+      }
+      if (state.keepersOnly) {
+        tags.push({ key: 'keepers', label: 'Keepers only' });
       }
       if (state.round) {
         tags.push({ key: 'round', label: `Round: ${state.round}` });
@@ -522,6 +562,9 @@
           } else if (tag.key === 'round') {
             state.round = '';
             roundSelect.value = '';
+          } else if (tag.key === 'keepers') {
+            state.keepersOnly = false;
+            keepersOnlyInput.checked = false;
           }
           applyAndRender();
         });
@@ -607,9 +650,12 @@
       return item;
     }
 
-    function matchesPick(pick, qLower, selectedTeam) {
+    function matchesPick(pick, qLower, selectedTeam, keepersOnly) {
       const teamMatches = !selectedTeam || pick.team === selectedTeam;
       if (!teamMatches) {
+        return false;
+      }
+      if (keepersOnly && !pick.player) {
         return false;
       }
 
@@ -632,6 +678,9 @@
       }
       if (state.team) {
         url.searchParams.set('team', state.team);
+      }
+      if (state.keepersOnly) {
+        url.searchParams.set('keepers', '1');
       }
       if (state.view === 'team') {
         url.searchParams.set('view', 'team');
@@ -659,12 +708,13 @@
       const q = state.q;
       const qLower = q.toLowerCase();
       const selectedTeam = state.team;
+      const keepersOnly = state.keepersOnly;
       let shownPicks = 0;
       let shownTeamPicks = 0;
 
       if (state.view === 'round') {
         rounds.forEach((round) => {
-          const filtered = round.picks.filter((pick) => matchesPick(pick, qLower, selectedTeam));
+          const filtered = round.picks.filter((pick) => matchesPick(pick, qLower, selectedTeam, keepersOnly));
           if (filtered.length === 0) {
             return;
           }
@@ -698,6 +748,9 @@
           rounds.forEach((round) => {
             round.picks.forEach((pick) => {
               if (pick.team !== teamName) {
+                return;
+              }
+              if (keepersOnly && !pick.player) {
                 return;
               }
               const matchesQuery = !qLower
@@ -777,6 +830,11 @@
 
     teamSelect.addEventListener('change', () => {
       state.team = teamSelect.value;
+      applyAndRender();
+    });
+
+    keepersOnlyInput.addEventListener('change', () => {
+      state.keepersOnly = keepersOnlyInput.checked;
       applyAndRender();
     });
 
