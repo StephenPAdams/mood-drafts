@@ -381,6 +381,19 @@
     .injury-wrap {
       padding: 8px 10px 10px;
     }
+    .injury-disclaimer {
+      margin: 2px 2px 8px;
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+    .injury-disclaimer a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .injury-disclaimer a:hover {
+      text-decoration: underline;
+    }
     .injury-table {
       width: 100%;
       border-collapse: collapse;
