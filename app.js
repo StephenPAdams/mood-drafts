@@ -1,0 +1,669 @@
+    const rounds = [{"round": 1, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "Kyle Tucker (LAD - OF)", "url": "https://sports.yahoo.com/mlb/players/10480"}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "Shohei Ohtani (Batter) (LAD - Util)", "url": "https://sports.yahoo.com/mlb/players/10835"}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "Juan Soto (NYM - OF)", "url": "https://sports.yahoo.com/mlb/players/10626"}, {"pick": 9, "team": "Sacrifice Blunts", "player": "Aaron Judge (NYY - OF)", "url": "https://sports.yahoo.com/mlb/players/9877"}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 2, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "Ronald Acu\u00f1a Jr. (ATL - OF)", "url": "https://sports.yahoo.com/mlb/players/10646"}, {"pick": 5, "team": "Panik at the Frisco", "player": "Vladimir Guerrero Jr. (TOR - 1B)", "url": "https://sports.yahoo.com/mlb/players/10621"}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "Jos\u00e9 Ram\u00edrez (CLE - 3B)", "url": "https://sports.yahoo.com/mlb/players/9507"}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 3, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "Kyle Schwarber (PHI - OF)", "url": "https://sports.yahoo.com/mlb/players/9861"}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "Tarik Skubal (DET - SP)", "url": "https://sports.yahoo.com/mlb/players/11763"}]}, {"round": 4, "picks": [{"pick": 1, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "Jacob deGrom (TEX - SP)", "url": "https://sports.yahoo.com/mlb/players/9701"}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "Yoshinobu Yamamoto (LAD - SP)", "url": "https://sports.yahoo.com/mlb/players/63423"}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "Josh Naylor (SEA - 1B)", "url": "https://sports.yahoo.com/mlb/players/10572"}]}, {"round": 5, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Dog Days", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "Logan Webb (SF - SP)", "url": "https://sports.yahoo.com/mlb/players/11235"}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 6, "picks": [{"pick": 1, "team": "Dog Days", "player": "Jacob Misiorowski (MIL - SP)", "url": "https://sports.yahoo.com/mlb/players/60254"}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 7, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "Bryan Woo (SEA - SP)", "url": "https://sports.yahoo.com/mlb/players/60584"}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "Max Fried (NYY - SP)", "url": "https://sports.yahoo.com/mlb/players/9620"}, {"pick": 8, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 8, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "Nolan McLean (NYM - SP)", "url": "https://sports.yahoo.com/mlb/players/62935"}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "Ben Rice (NYY - C,1B)", "url": "https://sports.yahoo.com/mlb/players/62137"}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 9, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "Spencer Strider (ATL - SP)", "url": "https://sports.yahoo.com/mlb/players/12281"}, {"pick": 6, "team": "Return of ThePollock", "player": "Pete Crow-Armstrong (CHC - OF)", "url": "https://sports.yahoo.com/mlb/players/12157"}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "Vinnie Pasquantino (KC - 1B)", "url": "https://sports.yahoo.com/mlb/players/12449"}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 10, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "Luke Keaschall (MIN - 2B)", "url": "https://sports.yahoo.com/mlb/players/63023"}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 11, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "Brice Turang (MIL - 2B)", "url": "https://sports.yahoo.com/mlb/players/11343"}, {"pick": 4, "team": "Bleacher Bums", "player": "Dylan Crews (WSH - OF)", "url": "https://sports.yahoo.com/mlb/players/62971"}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "Andy Pages (LAD - OF)", "url": "https://sports.yahoo.com/mlb/players/12148"}]}, {"round": 12, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "Matt McLain (CIN - 2B)", "url": "https://sports.yahoo.com/mlb/players/12390"}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "Cristopher S\u00e1nchez (PHI - SP)", "url": "https://sports.yahoo.com/mlb/players/11706"}, {"pick": 9, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "Trevor Rogers (BAL - SP)", "url": "https://sports.yahoo.com/mlb/players/10909"}, {"pick": 11, "team": "Latos Intolerant", "player": "Eugenio Su\u00e1rez (CIN - 3B)", "url": "https://sports.yahoo.com/mlb/players/9724"}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 13, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "Jarren Duran (BOS - OF)", "url": "https://sports.yahoo.com/mlb/players/11735"}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "itchy", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 14, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "Cade Horton (CHC - SP)", "url": "https://sports.yahoo.com/mlb/players/60118"}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 15, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "Zach Neto (LAA - SS)", "url": "https://sports.yahoo.com/mlb/players/60214"}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Dog Days", "player": "", "url": ""}, {"pick": 5, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 16, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "Alec Burleson (STL - 1B,OF)", "url": "https://sports.yahoo.com/mlb/players/12550"}, {"pick": 6, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "itchy", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 17, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "Brent Rooker (ATH - OF)", "url": "https://sports.yahoo.com/mlb/players/10917"}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "Roman Anthony (BOS - OF)", "url": "https://sports.yahoo.com/mlb/players/60108"}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 18, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "Trent Grisham (NYY - OF)", "url": "https://sports.yahoo.com/mlb/players/10522"}, {"pick": 3, "team": "itchy", "player": "James Wood (WSH - OF)", "url": "https://sports.yahoo.com/mlb/players/12521"}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "Shohei Ohtani (Pitcher) (LAD - SP)", "url": "https://sports.yahoo.com/mlb/players/10835"}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 19, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "Jes\u00fas Luzardo (PHI - SP)", "url": "https://sports.yahoo.com/mlb/players/10627"}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "itchy", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pitches Be Crazy", "player": "Garrett Crochet (BOS - SP)", "url": "https://sports.yahoo.com/mlb/players/12046"}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 20, "picks": [{"pick": 1, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "Paul Skenes (PIT - SP)", "url": "https://sports.yahoo.com/mlb/players/62972"}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 21, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 22, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "Junior Caminero (TB - 3B)", "url": "https://sports.yahoo.com/mlb/players/60419"}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 23, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "Tyler Soderstrom (ATH - 1B,OF)", "url": "https://sports.yahoo.com/mlb/players/12005"}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "Jacob Wilson (ATH - SS)", "url": "https://sports.yahoo.com/mlb/players/62976"}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "Drew Rasmussen (TB - SP)", "url": "https://sports.yahoo.com/mlb/players/11789"}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}, {"round": 24, "picks": [{"pick": 1, "team": "Dog Days", "player": "", "url": ""}, {"pick": 2, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 3, "team": "itchy", "player": "", "url": ""}, {"pick": 4, "team": "Sacrifice Blunts", "player": "", "url": ""}, {"pick": 5, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 6, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 7, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 8, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 9, "team": "Bleacher Bums", "player": "", "url": ""}, {"pick": 10, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 11, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 12, "team": "Goldschmidt Happens", "player": "", "url": ""}]}, {"round": 25, "picks": [{"pick": 1, "team": "Goldschmidt Happens", "player": "", "url": ""}, {"pick": 2, "team": "Latos Intolerant", "player": "", "url": ""}, {"pick": 3, "team": "The BigMoneyHu$tla$", "player": "", "url": ""}, {"pick": 4, "team": "Bleacher Bums", "player": "Bubba Chandler (PIT - SP)", "url": "https://sports.yahoo.com/mlb/players/12516"}, {"pick": 5, "team": "Pitches Be Crazy", "player": "", "url": ""}, {"pick": 6, "team": "Return of ThePollock", "player": "", "url": ""}, {"pick": 7, "team": "Pete Rose Bet On Me", "player": "", "url": ""}, {"pick": 8, "team": "Panik at the Frisco", "player": "", "url": ""}, {"pick": 9, "team": "Sacrifice Blunts", "player": "Jac Caglianone (KC - 1B,OF)", "url": "https://sports.yahoo.com/mlb/players/64312"}, {"pick": 10, "team": "itchy", "player": "", "url": ""}, {"pick": 11, "team": "Pinstripe mafia", "player": "", "url": ""}, {"pick": 12, "team": "Dog Days", "player": "", "url": ""}]}];
+const injuries = [{"name": "Merrill Kelly", "pos": "SP", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Apr 7, 2026", "status": "Out", "comment": "Mar 19: Kelly (back) allowed two runs on five hits over 2.2 innings in Wednesday's spring start against the Cubs.", "nameKey": "merrill kelly"}, {"name": "Corbin Burnes", "pos": "SP", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Jul 17, 2026", "status": "60-Day-IL", "comment": "Mar 17: Burnes (elbow) threw a bullpen session Monday, Steve Gilbert of MLB.com reports.", "nameKey": "corbin burnes"}, {"name": "Lourdes Gurriel Jr.", "pos": "LF", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Apr 17, 2026", "status": "Out", "comment": "Mar 13: Gurriel (knee) could return to game action by mid-April, Steve Gilbert of MLB.com reports.", "nameKey": "lourdes gurriel jr"}, {"name": "Adrian Del Castillo", "pos": "C", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Mar 26, 2026", "status": "Out", "comment": "Mar 6: Del Castillo (calf) has begun hitting in cages and catching bullpen sessions, Alex Weiner of Arizona Sports reports.", "nameKey": "adrian del castillo"}, {"name": "Cristian Mena", "pos": "RP", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Mar 26, 2026", "status": "Out", "comment": "Feb 26: Mena (shoulder) has continued his throwing program, but he has yet to throw off a mound, Alex Weiner of ArizonaSports.com reports.", "nameKey": "cristian mena"}, {"name": "Tyler Locklear", "pos": "1B", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "May 18, 2026", "status": "Out", "comment": "Feb 16: Diamondbacks manager Torey Lovullo said Sunday that Locklear (shoulder/elbow) is trending toward a return around mid-May to early June, Alex Weiner of ArizonaSports.com reports.", "nameKey": "tyler locklear"}, {"name": "A.J. Puk", "pos": "RP", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Jun 29, 2026", "status": "60-Day-IL", "comment": "Feb 15: The Diamondbacks placed Puk (elbow) on the 60-day injured list Sunday.", "nameKey": "a j puk"}, {"name": "Justin Martinez", "pos": "RP", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Aug 21, 2026", "status": "60-Day-IL", "comment": "Feb 14: Martinez (elbow) hopes to make his season debut by late August, Jack Sommers of SI.com reports.", "nameKey": "justin martinez"}, {"name": "Andrew Saalfrank", "pos": "RP", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Feb 1, 2026", "status": "60-Day-IL", "comment": "Feb 11: Saalfrank (shoulder) said Wednesday that he expects to be sidelined 10-16 months, Arizona Sports reports.", "nameKey": "andrew saalfrank"}, {"name": "Derek Law", "pos": "RP", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Jul 1, 2026", "status": "Out", "comment": "Jan 27: Law (forearm) signed a minor-league contract with the Diamondbacks on Tuesday, Aaron Hughes of SI.com reports.", "nameKey": "derek law"}, {"name": "Kyle Amendt", "pos": "RP", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Feb 1, 2026", "status": "Out", "comment": "Dec 16: Amendt underwent shoulder surgery Tuesday, Jack Sommers of SI.com reports.", "nameKey": "kyle amendt"}, {"name": "Tommy Henry", "pos": "RP", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Sep 1, 2026", "status": "Out", "comment": "Dec 3: The Diamondbacks re-signed Henry (elbow) to a minor-league contract Monday.", "nameKey": "tommy henry"}, {"name": "Blake Walston", "pos": "SP", "mlbTeam": "Arizona Diamondbacks", "estReturnDate": "Jul 1, 2026", "status": "Out", "comment": "Oct 2: The Diamondbacks placed Walston (elbow) on the 60-day injured list Sunday.", "nameKey": "blake walston"}, {"name": "Tyler Soderstrom", "pos": "LF", "mlbTeam": "Athletics", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 20: Soderstrom was removed from Thursday's Cactus League game against Seattle \"out of precaution\" after being hit by a pitch on the knee, Martin Gallegos of MLB.com reports.", "nameKey": "tyler soderstrom"}, {"name": "Gunnar Hoglund", "pos": "SP", "mlbTeam": "Athletics", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 12: Hoglund (knee) is now dealing with a back injury that will delay his start to the season, Martin Gallegos of MLB.com reports.", "nameKey": "gunnar hoglund"}, {"name": "Ben Bowden", "pos": "RP", "mlbTeam": "Athletics", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 9: The Athletics reassigned Bowden (lat) to minor-league camp Monday.", "nameKey": "ben bowden"}, {"name": "Ha-Seong Kim", "pos": "SS", "mlbTeam": "Atlanta Braves", "estReturnDate": "May 15, 2026", "status": "Out", "comment": "Mar 16: Kim (finger) arrived at spring training Monday and said that he's been cleared to take part in fielding drills, Mark Bowman of MLB.com reports.", "nameKey": "ha seong kim"}, {"name": "Joey Wentz", "pos": "RP", "mlbTeam": "Atlanta Braves", "estReturnDate": "Feb 1, 2026", "status": "Out", "comment": "Mar 9: Atlanta hopes to know the results of an MRI on Wentz's right knee Monday, Mark Bowman of MLB.com reports.", "nameKey": "joey wentz"}, {"name": "Daysbel Hernandez", "pos": "RP", "mlbTeam": "Atlanta Braves", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Feb 23: Atlanta transferred Hernandez (shoulder) from the 15-day injured list to the 60-day IL on Sunday.", "nameKey": "daysbel hernandez"}, {"name": "Hurston Waldrep", "pos": "SP", "mlbTeam": "Atlanta Braves", "estReturnDate": "Jun 2, 2026", "status": "Out", "comment": "Feb 18: Waldrep will undergo surgery Monday to remove loose bodies from his right elbow, Mark Bowman of MLB.com reports.", "nameKey": "hurston waldrep"}, {"name": "Spencer Schwellenbach", "pos": "SP", "mlbTeam": "Atlanta Braves", "estReturnDate": "Jun 2, 2026", "status": "60-Day-IL", "comment": "Feb 18: Atlanta announced that Schwellenbach underwent a procedure Wednesday to remove bone spurs from his right elbow, Mark Bowman of MLB.com reports.", "nameKey": "spencer schwellenbach"}, {"name": "Joe Jimenez", "pos": "RP", "mlbTeam": "Atlanta Braves", "estReturnDate": "Jul 17, 2026", "status": "60-Day-IL", "comment": "Feb 11: Atlanta manager Walt Weiss acknowledged Wednesday that he's uncertain if Jimenez (knee) will be available to pitch at any point in 2026, Mark Bowman of MLB.com reports.", "nameKey": "joe jimenez"}, {"name": "Sean Murphy", "pos": "C", "mlbTeam": "Atlanta Braves", "estReturnDate": "May 12, 2026", "status": "Out", "comment": "Feb 10: Murphy (hip) is expected to be sidelined until sometime in May, Mark Bowman of MLB.com reports.", "nameKey": "sean murphy"}, {"name": "Danny Young", "pos": "RP", "mlbTeam": "Atlanta Braves", "estReturnDate": "Jul 1, 2026", "status": "Out", "comment": "Dec 2: Atlanta signed Young (elbow) to a one-year contract Tuesday.", "nameKey": "danny young"}, {"name": "AJ Smith-Shawver", "pos": "SP", "mlbTeam": "Atlanta Braves", "estReturnDate": "Aug 1, 2026", "status": "Out", "comment": "Oct 2: Atlanta announced Monday that Smith-Shawver (elbow) underwent Tommy John surgery and will miss the remainder of the 2025 season.", "nameKey": "aj smith shawver"}, {"name": "Jordan Westburg", "pos": "3B", "mlbTeam": "Baltimore Orioles", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Mar 16: Westburg (elbow) said Monday that he remains without a timeline to increase his participation in baseball activities, Roch Kubatko of MASNSports.com reports.", "nameKey": "jordan westburg"}, {"name": "Jackson Holliday", "pos": "2B", "mlbTeam": "Baltimore Orioles", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 16: Holliday (hand) said he'll begin taking live at-bats this week, Andy Kostka of TheBaltimoreBanner.com reports.", "nameKey": "jackson holliday"}, {"name": "Andrew Kittredge", "pos": "RP", "mlbTeam": "Baltimore Orioles", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 4: Orioles manager Craig Albernaz said Wednesday that Kittredge is battling right shoulder inflammation and is \"a low probability\" to be ready for Opening Day, Jake Rill of MLB.com reports.", "nameKey": "andrew kittredge"}, {"name": "Felix Bautista", "pos": "RP", "mlbTeam": "Baltimore Orioles", "estReturnDate": "Feb 1, 2026", "status": "60-Day-IL", "comment": "Mar 4: Bautista (shoulder) threw a baseball Tuesday for the first time since undergoing surgery last August, Roch Kubatko of MASNSports.com reports.", "nameKey": "felix bautista"}, {"name": "Payton Eeles", "pos": "2B", "mlbTeam": "Baltimore Orioles", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Feb 22: Eeles left Sunday's spring training game against the Tigers due to left shoulder discomfort, Matt Weyrich of The Baltimore Sun reports.", "nameKey": "payton eeles"}, {"name": "Keagan Gillies", "pos": "P", "mlbTeam": "Baltimore Orioles", "estReturnDate": "Apr 3, 2026", "status": "Out", "comment": "Feb 20: no", "nameKey": "keagan gillies"}, {"name": "Colin Selby", "pos": "RP", "mlbTeam": "Baltimore Orioles", "estReturnDate": "May 25, 2026", "status": "60-Day-IL", "comment": "Feb 14: The Orioles placed Selby on the 60-day injured list Saturday with right shoulder inflammation, Rich Dubroff of BaltimoreBaseball.com reports.", "nameKey": "colin selby"}, {"name": "Brendan Rodgers", "pos": "2B", "mlbTeam": "Boston Red Sox", "estReturnDate": "Feb 1, 2026", "status": "Out", "comment": "Mar 17: Rodgers recently underwent right shoulder labral revision surgery, Chris Cotillo of MassLive.com reports.", "nameKey": "brendan rodgers"}, {"name": "Triston Casas", "pos": "1B", "mlbTeam": "Boston Red Sox", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Mar 16: Casas (knee) was able to take simulated at-bats in a minor-league game Tuesday, Ian Browne of MLB.com reports.", "nameKey": "triston casas"}, {"name": "Vinny Nittoli", "pos": "RP", "mlbTeam": "Boston Red Sox", "estReturnDate": "Feb 1, 2026", "status": "Out", "comment": "Mar 12: Nittoli (elbow) will undergo an internal brace procedure and miss the entire 2026 season, Ari Alexander of 7 News Boston reports.", "nameKey": "vinny nittoli"}, {"name": "Romy Gonzalez", "pos": "1B", "mlbTeam": "Boston Red Sox", "estReturnDate": "May 26, 2026", "status": "60-Day-IL", "comment": "Mar 12: Gonzalez will have his left shoulder injury evaluated Tuesday to determine whether he needs to undergo surgery, Rob Bradford of WEEI.com reports.", "nameKey": "romy gonzalez"}, {"name": "Alec Gamboa", "pos": "P", "mlbTeam": "Boston Red Sox", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Feb 28: Manager Alex Cora said Saturday that Gamboa is dealing with an elbow injury and will be shut down for at least three days, Matt Kawahara of the Houston Chronicle reports.", "nameKey": "alec gamboa"}, {"name": "Kutter Crawford", "pos": "SP", "mlbTeam": "Boston Red Sox", "estReturnDate": "Mar 26, 2026", "status": "Out", "comment": "Feb 27: Crawford (wrist/illness) will throw a live batting practice session Friday, Tim Healey of The Boston Globe reports.", "nameKey": "kutter crawford"}, {"name": "Anthony Seigler", "pos": "2B", "mlbTeam": "Boston Red Sox", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Feb 24: The Red Sox acquired Seigler in a trade with the Brewers on Monday, Mark Feinsand of MLB.com reports.", "nameKey": "anthony seigler"}, {"name": "Hobie Harris", "pos": "RP", "mlbTeam": "Boston Red Sox", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Feb 23: Red Sox manager Alex Cora said Monday that Harris has been shut down due to forearm tightness, Mac Cerullo of the Boston Herald reports.", "nameKey": "hobie harris"}, {"name": "Tanner Houck", "pos": "SP", "mlbTeam": "Boston Red Sox", "estReturnDate": "Feb 1, 2026", "status": "60-Day-IL", "comment": "Feb 16: Houck (elbow) began a throwing program Monday with 25 throws from 45 feet, Ian Browne of MLB.com reports.", "nameKey": "tanner houck"}, {"name": "Seiya Suzuki", "pos": "RF", "mlbTeam": "Chicago Cubs", "estReturnDate": "Mar 26, 2026", "status": "Day-To-Day", "comment": "Mar 17: Suzuki was diagnosed with a sprained PCL in his right knee Tuesday, which manager Craig Counsell described as \"good news,\" and the Cubs will wait to make a decision on the outfielder's Opening Day availability this weekend, Patrick Mooney of The Athletic reports.", "nameKey": "seiya suzuki"}, {"name": "Justin Steele", "pos": "SP", "mlbTeam": "Chicago Cubs", "estReturnDate": "May 15, 2026", "status": "Out", "comment": "Mar 14: Steele (elbow) faced live hitters Friday for the first time in 11 months as he continues his recovery from UCL revision surgery last April, Jordan Bastian of MLB.com reports.", "nameKey": "justin steele"}, {"name": "Jordan Wicks", "pos": "RP", "mlbTeam": "Chicago Cubs", "estReturnDate": "Apr 15, 2026", "status": "Out", "comment": "Mar 10: Wicks (forearm) is slated to throw off a mound next week, Bruce Levine of 670TheScore.com reports.", "nameKey": "jordan wicks"}, {"name": "Trent Thornton", "pos": "RP", "mlbTeam": "Chicago Cubs", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 8: The Cubs signed Thornton (Achilles) to a contract Monday, Tread Athletics reports.", "nameKey": "trent thornton"}, {"name": "Porter Hodge", "pos": "RP", "mlbTeam": "Chicago Cubs", "estReturnDate": "Apr 12, 2026", "status": "Out", "comment": "Mar 8: The Cubs announced Sunday that Hodge has been diagnosed with a right flexor tendon strain and will be shut down from throwing for two weeks before being re-evaluated, Bruce Levine of 670TheScore.com reports.", "nameKey": "porter hodge"}, {"name": "Shelby Miller", "pos": "RP", "mlbTeam": "Chicago Cubs", "estReturnDate": "Feb 1, 2026", "status": "60-Day-IL", "comment": "Mar 1: Miller (elbow) was placed on the 60-day injured list by the Cubs on Sunday.", "nameKey": "shelby miller"}, {"name": "Tyler Austin", "pos": "1B", "mlbTeam": "Chicago Cubs", "estReturnDate": "Jun 2, 2026", "status": "Out", "comment": "Feb 25: Austin signed a one-year, major-league contract with the Cubs on Thursday, Jeff Passan of ESPN.com reports.", "nameKey": "tyler austin"}, {"name": "Brandon Birdsell", "pos": "RP", "mlbTeam": "Chicago Cubs", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Oct 2: Birdsell is scheduled to undergo season-ending elbow surgery, Maddie Lee of the Chicago Sun-Times reports.", "nameKey": "brandon birdsell"}, {"name": "Mike Vasil", "pos": "RP", "mlbTeam": "Chicago White Sox", "estReturnDate": "Jul 1, 2026", "status": "Out", "comment": "Mar 17: Vasil (elbow) will undergo season-ending Tommy John surgery in the coming weeks, Mark Feinsand of MLB.com reports.", "nameKey": "mike vasil"}, {"name": "Drew Thorpe", "pos": "SP", "mlbTeam": "Chicago White Sox", "estReturnDate": "Jun 1, 2026", "status": "Out", "comment": "Mar 16: Thorpe (elbow) is scheduled to throw his fifth bullpen session of the spring at some point this week, Scott Merkin of MLB.com reports.", "nameKey": "drew thorpe"}, {"name": "Brooks Baldwin", "pos": "LF", "mlbTeam": "Chicago White Sox", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 12: Baldwin was diagnosed with right elbow inflammation Thursday, Scott Merkin of MLB.com reports.", "nameKey": "brooks baldwin"}, {"name": "Kyle Teel", "pos": "C", "mlbTeam": "Chicago White Sox", "estReturnDate": "Apr 14, 2026", "status": "Out", "comment": "Mar 11: White Sox general manager Chris Getz said Wednesday that Teel has a right hamstring strain and could be sidelined 4-6 weeks, Scott Merkin of MLB.com reports.", "nameKey": "kyle teel"}, {"name": "Prelander Berroa", "pos": "RP", "mlbTeam": "Chicago White Sox", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Feb 11: Berroa (elbow) has thrown off a mound three times so far as he continues his rehab from Tommy John surgery, Scott Merkin of MLB.com reports.", "nameKey": "prelander berroa"}, {"name": "Tim Elko", "pos": "1B", "mlbTeam": "Chicago White Sox", "estReturnDate": "Jul 1, 2026", "status": "Out", "comment": "Dec 14: Elko (knee) agreed to a minor-league contract with the White Sox on Sunday, Jack Ankony of SI.com reports.", "nameKey": "tim elko"}, {"name": "Ky Bush", "pos": "SP", "mlbTeam": "Chicago White Sox", "estReturnDate": "Apr 1, 2026", "status": "Out", "comment": "Nov 6: The White Sox placed Bush (elbow) on the 60-day injured list Monday.", "nameKey": "ky bush"}, {"name": "Mason Adams", "pos": "RP", "mlbTeam": "Chicago White Sox", "estReturnDate": "Jul 1, 2026", "status": "Out", "comment": "Oct 2: The White Sox announced that Adams underwent successful Tommy John surgery Wednesday, Scott Merkin of MLB.com reports.", "nameKey": "mason adams"}, {"name": "Brady Singer", "pos": "SP", "mlbTeam": "Cincinnati Reds", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 20: Singer (blister) expects to make his next start, MLB.com reports.", "nameKey": "brady singer"}, {"name": "Joel Alberto Valdez", "pos": "RP", "mlbTeam": "Cincinnati Reds", "estReturnDate": "Mar 26, 2026", "status": "Day-To-Day", "comment": "Mar 15: Reds manager Terry Francona said Thursday that Valdez will be shut down from throwing for a few weeks due to a shoulder issue, Charlie Goldsmith of Fox 19 Now Cincinnati reports.", "nameKey": "joel alberto valdez"}, {"name": "Caleb Ferguson", "pos": "RP", "mlbTeam": "Cincinnati Reds", "estReturnDate": "Apr 3, 2026", "status": "Out", "comment": "Mar 12: The Reds signed Ferguson to a one-year contract Tuesday, Gordon Wittenmyer of The Cincinnati Enquirer reports.", "nameKey": "caleb ferguson"}, {"name": "Hunter Greene", "pos": "SP", "mlbTeam": "Cincinnati Reds", "estReturnDate": "Jul 1, 2026", "status": "Out", "comment": "Mar 10: Greene is scheduled to have bone chips removed from his right elbow Wednesday and is expected to be out until July, Gordon Wittenmyer of The Cincinnati Enquirer reports.", "nameKey": "hunter greene"}, {"name": "Josh Staumont", "pos": "RP", "mlbTeam": "Cincinnati Reds", "estReturnDate": "Mar 21, 2026", "status": "Day-To-Day", "comment": "Feb 12: The Reds re-signed Staumont to a minor-league contract Dec. 30.", "nameKey": "josh staumont"}, {"name": "Alex Young", "pos": "RP", "mlbTeam": "Cincinnati Reds", "estReturnDate": "Apr 1, 2026", "status": "Out", "comment": "Dec 9: Young revealed in a post on his personal Instagram account that he underwent season-ending surgery on his left elbow March 31.", "nameKey": "alex young"}, {"name": "Carson Spiers", "pos": "SP", "mlbTeam": "Cincinnati Reds", "estReturnDate": "Sep 1, 2026", "status": "Out", "comment": "Nov 24: The Reds re-signed Spiers (elbow) to a minor-league contract with an invitation to spring training Monday.", "nameKey": "carson spiers"}, {"name": "George Valera", "pos": "RF", "mlbTeam": "Cleveland Guardians", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 18: Valera (calf) began running Tuesday as part of his activity, Tim Stebbins of MLB.com reports.", "nameKey": "george valera"}, {"name": "Andrew Walters", "pos": "RP", "mlbTeam": "Cleveland Guardians", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Mar 17: Walters (lat) was activated from the injured list Thursday, Tim Stebbins of MLB.com reports.", "nameKey": "andrew walters"}, {"name": "Hunter Gaddis", "pos": "RP", "mlbTeam": "Cleveland Guardians", "estReturnDate": "Mar 22, 2026", "status": "Day-To-Day", "comment": "Mar 17: Gaddis (forearm) will throw a live batting practice session Wednesday, MLB.com reports.", "nameKey": "hunter gaddis"}, {"name": "Carlos Hernandez", "pos": "RP", "mlbTeam": "Cleveland Guardians", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Feb 16: Hernandez is making progress but is still in the midst of a rehab program after suffering fractures to his left arm and right leg during a Jan. 11 car accident in Venezuela, SI.com reports.", "nameKey": "carlos hernandez"}, {"name": "Tyler Freeman", "pos": "RF", "mlbTeam": "Colorado Rockies", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 18: Freeman (back) is starting in right field and batting second in Thursday's Cactus League tilt against the Brewers.", "nameKey": "tyler freeman"}, {"name": "Case Williams", "pos": "SP", "mlbTeam": "Colorado Rockies", "estReturnDate": "Mar 27, 2026", "status": "Day-To-Day", "comment": "Mar 18: Williams is currently slowed by a stress reaction in his right triceps, Thomas Harding of MLB.com reports.", "nameKey": "case williams"}, {"name": "Brayan Castillo", "pos": "RP", "mlbTeam": "Colorado Rockies", "estReturnDate": "Mar 25, 2026", "status": "Day-To-Day", "comment": "Mar 15: The Rockies announced Monday that Castillo is dealing with right lat tightness and has been shut down from throwing while undergoing treatment for the injury, TheDNVR.com reports.", "nameKey": "brayan castillo"}, {"name": "Jared Thomas", "pos": "CF", "mlbTeam": "Colorado Rockies", "estReturnDate": "Mar 26, 2026", "status": "Day-To-Day", "comment": "Mar 9: The Rockies announced Monday that Thomas hasn't been participating in spring training while he recovers from offseason surgery to address a fractured hamate bone in his right wrist, TheDNVR.com reports.", "nameKey": "jared thomas"}, {"name": "RJ Petit", "pos": "RP", "mlbTeam": "Colorado Rockies", "estReturnDate": "Jun 1, 2026", "status": "Out", "comment": "", "nameKey": "rj petit"}, {"name": "McCade Brown", "pos": "SP", "mlbTeam": "Colorado Rockies", "estReturnDate": "Mar 22, 2026", "status": "Day-To-Day", "comment": "Feb 26: Brown (shoulder) will throw a bullpen session Friday, Thomas Harding of MLB.com reports.", "nameKey": "mccade brown"}, {"name": "Pierson Ohl", "pos": "RP", "mlbTeam": "Colorado Rockies", "estReturnDate": "Apr 1, 2026", "status": "Out", "comment": "Feb 23: The Rockies acquired Ohl and Edouard Julien from the Twins on Wednesday in exchange for Jace Kaminska and cash considerations.", "nameKey": "pierson ohl"}, {"name": "Kris Bryant", "pos": "DH", "mlbTeam": "Colorado Rockies", "estReturnDate": "Jun 1, 2026", "status": "60-Day-IL", "comment": "Feb 17: Bryant said Tuesday that the ongoing pain in his back continues to prevent him from participating in baseball activities, though he's still consulting with doctors and trainers for potential rehab options, Thomas Harding of MLB.com reports.", "nameKey": "kris bryant"}, {"name": "Jeff Criswell", "pos": "RP", "mlbTeam": "Colorado Rockies", "estReturnDate": "Jun 1, 2026", "status": "60-Day-IL", "comment": "Feb 12: The Rockies transferred Criswell (elbow) to the 60-day injured list Monday.", "nameKey": "jeff criswell"}, {"name": "Bailey Horn", "pos": "RP", "mlbTeam": "Detroit Tigers", "estReturnDate": "Mar 26, 2026", "status": "Out", "comment": "Mar 20: Horn (elbow) is scheduled to throw a bullpen session Friday, Evan Petzold of the Detroit Free Press reports.", "nameKey": "bailey horn"}, {"name": "Scott Effross", "pos": "RP", "mlbTeam": "Detroit Tigers", "estReturnDate": "Mar 21, 2026", "status": "Day-To-Day", "comment": "Mar 18: The Tigers reassigned Effross (oblique) to minor-league camp Wednesday, Chris McCosky of The Detroit News reports.", "nameKey": "scott effross"}, {"name": "Jake Rogers", "pos": "C", "mlbTeam": "Detroit Tigers", "estReturnDate": "Mar 24, 2026", "status": "Day-To-Day", "comment": "Mar 18: The Tigers and Rogers avoided arbitration by agreeing to a one-year, $3.05 million contract Friday, Evan Petzold of the Detroit Free Press reports.", "nameKey": "jake rogers"}, {"name": "Jackson Jobe", "pos": "SP", "mlbTeam": "Detroit Tigers", "estReturnDate": "Sep 1, 2026", "status": "60-Day-IL", "comment": "Mar 17: Jobe (elbow) is scheduled to play catch out to 120 feet three times this week, Evan Petzold of the Detroit Free Press reports.", "nameKey": "jackson jobe"}, {"name": "Beau Brieske", "pos": "RP", "mlbTeam": "Detroit Tigers", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 17: Brieske (ribcage) worked around a walk to toss a scoreless inning of relief in Friday's 7-5 loss to the Pirates in Grapefruit League play.", "nameKey": "beau brieske"}, {"name": "Phil Bickford", "pos": "RP", "mlbTeam": "Detroit Tigers", "estReturnDate": "Mar 27, 2026", "status": "Day-To-Day", "comment": "Mar 15: Bickford was shut down from throwing Tuesday due to a triceps strain, Chris McCosky of The Detroit News reports.", "nameKey": "phil bickford"}, {"name": "Trey Sweeney", "pos": "SS", "mlbTeam": "Detroit Tigers", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 15: The Tigers announced Friday that Sweeney (shoulder) has started his throwing program, Chris McCosky of The Detroit News reports.", "nameKey": "trey sweeney"}, {"name": "Troy Melton", "pos": "RP", "mlbTeam": "Detroit Tigers", "estReturnDate": "May 26, 2026", "status": "60-Day-IL", "comment": "Mar 13: The Tigers announced Friday that Melton (elbow) has started his throwing program, Chris McCosky of The Detroit News reports.", "nameKey": "troy melton"}, {"name": "Sawyer Gipson-Long", "pos": "RP", "mlbTeam": "Detroit Tigers", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 12: Gipson-Long (oblique) threw a bullpen session Tuesday and appears to be on track for the start of the regular season, MLB.com reports.", "nameKey": "sawyer gipson long"}, {"name": "Dugan Darnell", "pos": "RP", "mlbTeam": "Detroit Tigers", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 9: The Tigers announced Sunday that Darnell (hip) has been playing catch five times a week and is also taking part in a running progression, Evan Petzold of the Detroit Free Press reports.", "nameKey": "dugan darnell"}, {"name": "Josue Briceno", "pos": "C", "mlbTeam": "Detroit Tigers", "estReturnDate": "Jun 1, 2026", "status": "Out", "comment": "Mar 6: Briceno said Friday that he expects to be sidelined a few months after having surgery Wednesday to repair a tendon in his right wrist, Evan Petzold of the Detroit Free Press reports.", "nameKey": "josue briceno"}, {"name": "Tyler Owens", "pos": "SP", "mlbTeam": "Detroit Tigers", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 1: Owens (hip) is scheduled to throw his first bullpen session of spring training Tuesday, Evan Petzold of the Detroit Free Press reports.", "nameKey": "tyler owens"}, {"name": "Troy Watson", "pos": "SP", "mlbTeam": "Detroit Tigers", "estReturnDate": "Mar 28, 2026", "status": "Out", "comment": "Feb 15: Watson is scheduled to begin a throwing program Monday as he works his way back from arthroscopic right elbow surgery, Evan Petzold of the Detroit Free Press reports.", "nameKey": "troy watson"}, {"name": "Reese Olson", "pos": "SP", "mlbTeam": "Detroit Tigers", "estReturnDate": "Feb 21, 2026", "status": "60-Day-IL", "comment": "Feb 10: The Tigers placed Olson on the 60-day injured list Tuesday following a right shoulder labral repair Feb. 2 that will result in him missing the 2026 season.", "nameKey": "reese olson"}, {"name": "Bennett Sousa", "pos": "RP", "mlbTeam": "Houston Astros", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 19: Manager Joe Espada announced Thursday that Sousa will begin the regular season on the 15-day injured list due to a left oblique injury, Matt Kawahara of the Houston Chronicle reports.", "nameKey": "bennett sousa"}, {"name": "Zach Dezenzo", "pos": "LF", "mlbTeam": "Houston Astros", "estReturnDate": "Mar 22, 2026", "status": "Day-To-Day", "comment": "Mar 18: no", "nameKey": "zach dezenzo"}, {"name": "Jeremy Pena", "pos": "SS", "mlbTeam": "Houston Astros", "estReturnDate": "Mar 26, 2026", "status": "Out", "comment": "Mar 18: Astros manager Joe Espada said Wednesday that Pena (finger) has resumed throwing and will start swinging a bat with both hands this weekend, Chandler Rome of The Athletic reports.", "nameKey": "jeremy pena"}, {"name": "Enyel De Los Santos", "pos": "RP", "mlbTeam": "Houston Astros", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 15: Astros manager Joe Espada said that De Los Santos (knee) is slated to pitch in a game Tuesday, Brian McTaggart of MLB.com reports.", "nameKey": "enyel de los santos"}, {"name": "Josh Hader", "pos": "RP", "mlbTeam": "Houston Astros", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 11: Astros manager Joe Espada said Wednesday that Hader (biceps) will begin the season on the injured list, Chandler Rome of The Athletic reports.", "nameKey": "josh hader"}, {"name": "Nate Pearson", "pos": "RP", "mlbTeam": "Houston Astros", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 3: Astros manager Joe Espada said Tuesday that the team will \"slow down\" Pearson's throwing program after the pitcher felt soreness in his surgically repaired right elbow during his last bullpen session, Matt Kawahara of the Houston Chronicle reports.", "nameKey": "nate pearson"}, {"name": "Glenn Otto", "pos": "RP", "mlbTeam": "Houston Astros", "estReturnDate": "Mar 21, 2026", "status": "Day-To-Day", "comment": "Feb 13: The Astros reassigned Otto (shoulder) and Ray Gaither (shoulder) to minor-league camp Tuesday, Chandler Rome of The Athletic reports.", "nameKey": "glenn otto"}, {"name": "Hayden Wesneski", "pos": "SP", "mlbTeam": "Houston Astros", "estReturnDate": "Aug 1, 2026", "status": "Out", "comment": "Jan 8: Wesneski (elbow) agreed to a one-year, $975,000 deal with the Astros on Thursday, Chandler Rome of The Athletic reports.", "nameKey": "hayden wesneski"}, {"name": "Brandon Walter", "pos": "SP", "mlbTeam": "Houston Astros", "estReturnDate": "Feb 1, 2026", "status": "Out", "comment": "Nov 6: Walter (elbow) underwent Tommy John surgery Monday, Chandler Rome of The Athletic reports.", "nameKey": "brandon walter"}, {"name": "Ronel Blanco", "pos": "SP", "mlbTeam": "Houston Astros", "estReturnDate": "Aug 1, 2026", "status": "Out", "comment": "Nov 6: Blanco (elbow) was activated from the injured list Thursday, Brian McTaggart of MLB.com reports.", "nameKey": "ronel blanco"}, {"name": "Matt Strahm", "pos": "RP", "mlbTeam": "Kansas City Royals", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 19: Strahm was removed from Wednesday's Cactus League game against the Rangers with a left leg contusion, Anne Rogers of MLB.com reports.", "nameKey": "matt strahm"}, {"name": "Michael Massey", "pos": "2B", "mlbTeam": "Kansas City Royals", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 18: Massey may not be available for Opening Day due to a calf strain, Anne Rogers of MLB.com reports.", "nameKey": "michael massey"}, {"name": "Stephen Kolek", "pos": "SP", "mlbTeam": "Kansas City Royals", "estReturnDate": "Mar 27, 2026", "status": "Out", "comment": "Mar 18: Kolek (oblique) threw a bullpen session Wednesday, Anne Rogers of MLB.com reports.", "nameKey": "stephen kolek"}, {"name": "James McArthur", "pos": "RP", "mlbTeam": "Kansas City Royals", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Feb 19: McArthur (elbow) signed a one-year, $810,000 contract with the Royals on Thursday, avoiding arbitration.", "nameKey": "james mcarthur"}, {"name": "Alec Marsh", "pos": "SP", "mlbTeam": "Kansas City Royals", "estReturnDate": "Feb 1, 2026", "status": "60-Day-IL", "comment": "Feb 12: The Royals placed Marsh (shoulder) on the 60-day injured list Thursday.", "nameKey": "alec marsh"}, {"name": "Grayson Rodriguez", "pos": "SP", "mlbTeam": "Los Angeles Angels", "estReturnDate": "Mar 26, 2026", "status": "Day-To-Day", "comment": "Mar 19: Manager Kurt Suzuki said Thursday that Rodriguez is dealing with a dead arm, Rhett Bollinger of MLB.com reports.", "nameKey": "grayson rodriguez"}, {"name": "Vaughn Grissom", "pos": "2B", "mlbTeam": "Los Angeles Angels", "estReturnDate": "Mar 22, 2026", "status": "Day-To-Day", "comment": "Mar 18: Grissom said Wednesday that he received a cortisone shot in his injured left hand this week, Rhett Bollinger of MLB.com reports.", "nameKey": "vaughn grissom"}, {"name": "Robert Stephenson", "pos": "RP", "mlbTeam": "Los Angeles Angels", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Mar 14: Stephenson (shoulder) has had a setback and is going for more tests to determine the next steps in his recovery, Jeff Fletcher of the Orange County Register reports.", "nameKey": "robert stephenson"}, {"name": "Ben Joyce", "pos": "RP", "mlbTeam": "Los Angeles Angels", "estReturnDate": "Apr 7, 2026", "status": "Out", "comment": "Mar 12: Joyce (shoulder) has been throwing bullpens but is likely to start the regular season on the injured list, per MLB.com.", "nameKey": "ben joyce"}, {"name": "Anthony Rendon", "pos": "3B", "mlbTeam": "Los Angeles Angels", "estReturnDate": "Feb 1, 2026", "status": "Out", "comment": "Dec 30: The Angels and Rendon (hip) have agreed to a contract buyout that will end his tenure with the club, Sam Blum of The Athletic reports.", "nameKey": "anthony rendon"}, {"name": "Tommy Edman", "pos": "2B", "mlbTeam": "Los Angeles Dodgers", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Mar 17: Edman (ankle) has continued to ramp up his running progression and is also taking on-field batting practice, per MLB.com.", "nameKey": "tommy edman"}, {"name": "Brusdar Graterol", "pos": "RP", "mlbTeam": "Los Angeles Dodgers", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Mar 16: Graterol (shoulder) was spotted playing catch out to about 90 feet Monday, Fabian Ardaya of The Athletic reports.", "nameKey": "brusdar graterol"}, {"name": "Gavin Stone", "pos": "SP", "mlbTeam": "Los Angeles Dodgers", "estReturnDate": "May 8, 2026", "status": "Out", "comment": "Mar 15: Stone (shoulder) said Sunday that he hopes to begin playing catch next week, David Vassegh of AM 570 LA Sports reports.", "nameKey": "gavin stone"}, {"name": "Blake Snell", "pos": "SP", "mlbTeam": "Los Angeles Dodgers", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Mar 12: Snell (shoulder) threw a 15-pitch bullpen session Thursday, Bill Plunkett of The Orange County Register reports.", "nameKey": "blake snell"}, {"name": "Bobby Miller", "pos": "SP", "mlbTeam": "Los Angeles Dodgers", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 8: Miller (shoulder) threw off a mound Tuesday, Jack Harris of the California Post reports.", "nameKey": "bobby miller"}, {"name": "Enrique Hernandez", "pos": "1B", "mlbTeam": "Los Angeles Dodgers", "estReturnDate": "May 24, 2026", "status": "60-Day-IL", "comment": "Mar 4: Hernandez (elbow) said Wednesday that he's optimistic about being activated from the 60-day injured list when first eligible May 24, Jack Vita of the Los Angeles Times reports.", "nameKey": "enrique hernandez"}, {"name": "Evan Phillips", "pos": "RP", "mlbTeam": "Los Angeles Dodgers", "estReturnDate": "Jul 17, 2026", "status": "60-Day-IL", "comment": "Mar 3: Phillips (elbow) threw to a standing catcher \"with noticeably more intensity\" Tuesday, Courtney Hollmon of MLB.com reports.", "nameKey": "evan phillips"}, {"name": "Brock Stewart", "pos": "RP", "mlbTeam": "Los Angeles Dodgers", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Feb 27: Dodgers manager Dave Roberts said Friday that he's been encouraged by how Stewart (shoulder) has looked in bullpen sessions and believes the pitcher's absence to begin the season could be brief, Jack Harris of the California Post reports.", "nameKey": "brock stewart"}, {"name": "Maximo Acosta", "pos": "SS", "mlbTeam": "Miami Marlins", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 15: The Marlins scratched Acosta from the lineup for Wednesday's Grapefruit League game against the Astros due to left oblique discomfort, Christina De Nicola of MLB.com reports.", "nameKey": "maximo acosta"}, {"name": "Graham Pauley", "pos": "3B", "mlbTeam": "Miami Marlins", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 15: Pauley (forearm), who is batting sixth as the designated hitter in Sunday's Grapefruit League game against the Astros, is expected to play defense in spring games next weekend, Christina De Nicola of MLB.com reports.", "nameKey": "graham pauley"}, {"name": "Adam Mazur", "pos": "SP", "mlbTeam": "Miami Marlins", "estReturnDate": "Apr 1, 2026", "status": "Out", "comment": "Mar 11: Mazur (elbow) underwent UCL reconstruction surgery with an internal brace Wednesday and is expected to make a full recovery in 13-to-14 months, Christina De Nicola of MLB.com reports.", "nameKey": "adam mazur"}, {"name": "Thomas White", "pos": "SP", "mlbTeam": "Miami Marlins", "estReturnDate": "Mar 27, 2026", "status": "Out", "comment": "Mar 3: The Marlins reassigned White (oblique) to minor-league camp Tuesday.", "nameKey": "thomas white"}, {"name": "Ronny Henriquez", "pos": "RP", "mlbTeam": "Miami Marlins", "estReturnDate": "Feb 1, 2026", "status": "60-Day-IL", "comment": "Feb 12: The Marlins placed Henriquez (elbow) on the 60-day injured list Thursday.", "nameKey": "ronny henriquez"}, {"name": "Jesus Tinoco", "pos": "RP", "mlbTeam": "Miami Marlins", "estReturnDate": "Feb 1, 2026", "status": "Out", "comment": "Jan 12: The Marlins re-signed Tinoco (elbow) to a minor-league contract Jan. 5.", "nameKey": "jesus tinoco"}, {"name": "Kyle Harrison", "pos": "RP", "mlbTeam": "Milwaukee Brewers", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 18: Harrison was removed during the third inning of Wednesday's Cactus League game against the Angels due to a blister on his left index finger, Sophia Minnaert of FanDuel Sports Network Wisconsin reports.", "nameKey": "kyle harrison"}, {"name": "Brandon Woodruff", "pos": "SP", "mlbTeam": "Milwaukee Brewers", "estReturnDate": "Mar 26, 2026", "status": "Day-To-Day", "comment": "Mar 18: Woodruff (lat) said Friday that his status for Opening Day remains \"up in the air,\" Adam McCalvy of MLB.com reports.", "nameKey": "brandon woodruff"}, {"name": "Craig Yoho", "pos": "RP", "mlbTeam": "Milwaukee Brewers", "estReturnDate": "Apr 12, 2026", "status": "Out", "comment": "Mar 18: The Brewers announced Wednesday that Yoho has been diagnosed with a low-grade right soleus strain and is projected to return to action in mid-April, Curt Hogg of the Milwaukee Journal Sentinel reports.", "nameKey": "craig yoho"}, {"name": "Rob Zastryzny", "pos": "RP", "mlbTeam": "Milwaukee Brewers", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 18: The Brewers activated Zastryzny (ribs) from the 15-day injured list Friday.", "nameKey": "rob zastryzny"}, {"name": "Quinn Priester", "pos": "SP", "mlbTeam": "Milwaukee Brewers", "estReturnDate": "Apr 28, 2026", "status": "Out", "comment": "Mar 13: Priester (wrist) said Friday that he's hoping to be ready to pitch in games by \"late April, May,\" Adam McCalvy of MLB.com reports.", "nameKey": "quinn priester"}, {"name": "Akil Baddoo", "pos": "LF", "mlbTeam": "Milwaukee Brewers", "estReturnDate": "Apr 3, 2026", "status": "Out", "comment": "Mar 12: Manager Pat Murphy revealed Thursday that Baddoo's left quadriceps injury is worse than initially believed and he will miss at least three to four weeks, Adam McCalvy of MLB.com reports.", "nameKey": "akil baddoo"}, {"name": "Thomas Pannone", "pos": "RP", "mlbTeam": "Milwaukee Brewers", "estReturnDate": "Mar 25, 2026", "status": "Day-To-Day", "comment": "Mar 1: Pannone was diagnosed with a torn flexor tendon in his left forearm Saturday, Adam McCalvy of MLB.com reports.", "nameKey": "thomas pannone"}, {"name": "J.B. Bukauskas", "pos": "RP", "mlbTeam": "Milwaukee Brewers", "estReturnDate": "Mar 22, 2026", "status": "Day-To-Day", "comment": "Mar 1: Bukauskas will undergo surgery on his injured right lat and be sidelined for 9-to-10 months, Todd Rosiak of the Milwaukee Journal Sentinel reports.", "nameKey": "j b bukauskas"}, {"name": "Eduardo Garcia", "pos": "OF", "mlbTeam": "Milwaukee Brewers", "estReturnDate": "Mar 26, 2026", "status": "Out", "comment": "", "nameKey": "eduardo garcia"}, {"name": "Steward Berroa", "pos": "RF", "mlbTeam": "Milwaukee Brewers", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Feb 21: Brewers manager Pat Murphy said Saturday that Berroa is dealing with a sore shoulder, Todd Rosiak of the Milwaukee Journal Sentinel reports.", "nameKey": "steward berroa"}, {"name": "Gerson Garabito", "pos": "RP", "mlbTeam": "Milwaukee Brewers", "estReturnDate": "Jun 21, 2026", "status": "Out", "comment": "Feb 21: Garabito will be out for four months after undergoing surgery to address a broken bone in his foot, Todd Rosiak of the Milwaukee Journal Sentinel reports.", "nameKey": "gerson garabito"}, {"name": "Austin Martin", "pos": "CF", "mlbTeam": "Minnesota Twins", "estReturnDate": "Mar 23, 2026", "status": "Day-To-Day", "comment": "Mar 16: Martin was removed after three innings of Monday's Grapefruit League game against the Pirates after sustaining a concussion, Bobby Nightengale of The Minnesota Star Tribune reports.", "nameKey": "austin martin"}, {"name": "Julian Merryweather", "pos": "RP", "mlbTeam": "Minnesota Twins", "estReturnDate": "Mar 27, 2026", "status": "Out", "comment": "Mar 16: The Twins reassigned Merryweather (hamstring) to minor-league camp Monday.", "nameKey": "julian merryweather"}, {"name": "Walker Jenkins", "pos": "CF", "mlbTeam": "Minnesota Twins", "estReturnDate": "Apr 1, 2026", "status": "Out", "comment": "Mar 15: Jenkins (hamstring) is expected to be ready for the start of the Triple-A St. Paul Saints season, the Minnesota Star Tribune reports.", "nameKey": "walker jenkins"}, {"name": "Travis Adams", "pos": "RP", "mlbTeam": "Minnesota Twins", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 15: The Twins announced Sunday that Adams has been diagnosed with right elbow inflammation and won't resume throwing until at least next weekend, Matthew Leach of MLB.com reports.", "nameKey": "travis adams"}, {"name": "David Festa", "pos": "SP", "mlbTeam": "Minnesota Twins", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Mar 11: Festa (shoulder) remains shut down from throwing and is expected to begin the season on the injured list, the Minnesota Star Tribune reports.", "nameKey": "david festa"}, {"name": "Pablo Lopez", "pos": "SP", "mlbTeam": "Minnesota Twins", "estReturnDate": "Apr 1, 2026", "status": "60-Day-IL", "comment": "Feb 26: The Twins placed Lopez (elbow) on the 60-day injured list Thursday.", "nameKey": "pablo lopez"}, {"name": "Cory Lewis", "pos": "SP", "mlbTeam": "Minnesota Twins", "estReturnDate": "Apr 1, 2026", "status": "Out", "comment": "Feb 26: Twins head trainer Nick Paparesta said Thursday that Lewis (shoulder) is still a couple weeks away from throwing off a mound, Bobby Nightengale of The Minnesota Star Tribune reports.", "nameKey": "cory lewis"}, {"name": "Matt Canterino", "pos": "SP", "mlbTeam": "Minnesota Twins", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Feb 10: Canterino (shoulder) will be with the Twins in big-league spring training but isn't expected to pitch during camp as he continues to recover from shoulder surgery, Aaron Gleeman of The Athletic reports.", "nameKey": "matt canterino"}, {"name": "Francisco Alvarez", "pos": "C", "mlbTeam": "New York Mets", "estReturnDate": "Mar 21, 2026", "status": "Day-To-Day", "comment": "Mar 20: Mets manager Carlos Mendoza said Friday that Alvarez (back) is feeling \"better\" and could rejoin the Grapefruit League lineup Saturday if he continues to improve, Anthony DiComo of MLB.com reports.", "nameKey": "francisco alvarez"}, {"name": "Francisco Lindor", "pos": "SS", "mlbTeam": "New York Mets", "estReturnDate": "Mar 26, 2026", "status": "Day-To-Day", "comment": "Mar 15: Lindor (hand) played four innings at shortstop while making his spring debut in Sunday's Grapefruit League game against the Blue Jays, but afterwards he wouldn't commit to being ready for Opening Day despite saying that he has \"checked every single box,\" Anthony DiComo of MLB.com reports.", "nameKey": "francisco lindor"}, {"name": "Justin Hagenman", "pos": "RP", "mlbTeam": "New York Mets", "estReturnDate": "May 27, 2026", "status": "60-Day-IL", "comment": "Mar 14: The Mets placed Hagenman on the 60-day injured list Saturday due to a rib fracture.", "nameKey": "justin hagenman"}, {"name": "A.J. Minter", "pos": "RP", "mlbTeam": "New York Mets", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Mar 14: Minter (lat) hit 93 mph with his fastball in a live batting practice session Friday, Anthony DiComo of MLB.com reports.", "nameKey": "a j minter"}, {"name": "Brandon Waddell", "pos": "RP", "mlbTeam": "New York Mets", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 8: The Mets outrighted Waddell to Triple-A Syracuse on Friday, Anthony DiComo of MLB.com reports.", "nameKey": "brandon waddell"}, {"name": "Robert Stock", "pos": "RP", "mlbTeam": "New York Mets", "estReturnDate": "Sep 1, 2026", "status": "Out", "comment": "Mar 8: Stock experienced shoulder discomfort while playing with Team Israel in the World Baseball Classic and will undergo testing, Laura Albanese of Newsday reports.", "nameKey": "robert stock"}, {"name": "Nate Lavender", "pos": "RP", "mlbTeam": "New York Mets", "estReturnDate": "Mar 26, 2026", "status": "Out", "comment": "Mar 4: Lavender (elbow) cleared outright waivers Wednesday and was returned to the Mets.", "nameKey": "nate lavender"}, {"name": "Grae Kessinger", "pos": "3B", "mlbTeam": "New York Mets", "estReturnDate": "May 15, 2026", "status": "Out", "comment": "Mar 1: Mets manager Carlos Mendoza said that Kessinger will get imaging done after suffering a left knee injury in Friday's Grapefruit League game against the Cardinals, SNY Mets reports.", "nameKey": "grae kessinger"}, {"name": "Dedniel Nunez", "pos": "RP", "mlbTeam": "New York Mets", "estReturnDate": "Sep 1, 2026", "status": "60-Day-IL", "comment": "Feb 15: The Mets transferred Nunez (elbow) from the 15-day injured list to the 60-day IL on Monday.", "nameKey": "dedniel nunez"}, {"name": "Tylor Megill", "pos": "SP", "mlbTeam": "New York Mets", "estReturnDate": "Feb 1, 2026", "status": "60-Day-IL", "comment": "Feb 12: The Mets and Megill (elbow) avoided arbitration by agreeing to a one-year, $2.5 million contract Thursday, Ari Alexander of 7 News Boston reports.", "nameKey": "tylor megill"}, {"name": "Reed Garrett", "pos": "RP", "mlbTeam": "New York Mets", "estReturnDate": "Feb 1, 2026", "status": "60-Day-IL", "comment": "Feb 10: The Mets placed Garrett (elbow) on the 60-day injured list Tuesday.", "nameKey": "reed garrett"}, {"name": "Gerrit Cole", "pos": "SP", "mlbTeam": "New York Yankees", "estReturnDate": "May 25, 2026", "status": "Out", "comment": "Mar 19: Cole (elbow) allowed two hits in one scoreless inning against Boston in a Grapefruit League game Wednesday. He did not walk or strike out any batters.", "nameKey": "gerrit cole"}, {"name": "Carlos Rodon", "pos": "SP", "mlbTeam": "New York Yankees", "estReturnDate": "Apr 25, 2026", "status": "Out", "comment": "Mar 17: Manager Aaron Boone said Tuesday that Rodon (elbow) is not expected to pitch in a Grapefruit League game this spring, Gary Phillips of the New York Daily News reports.", "nameKey": "carlos rodon"}, {"name": "Anthony Volpe", "pos": "SS", "mlbTeam": "New York Yankees", "estReturnDate": "Apr 24, 2026", "status": "Out", "comment": "Mar 12: Volpe (shoulder) went through a high-intensity defensive workout at full speed Thursday and is expected to be about two weeks away from taking live batting practice, Jack Curry of YES Network reports.", "nameKey": "anthony volpe"}, {"name": "Rafael Montero", "pos": "RP", "mlbTeam": "New York Yankees", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 6: Montero continues to have visa issues and hasn't yet arrived at Yankees camp, Bryan Hoch of MLB.com reports.", "nameKey": "rafael montero"}, {"name": "Clarke Schmidt", "pos": "SP", "mlbTeam": "New York Yankees", "estReturnDate": "Aug 1, 2026", "status": "60-Day-IL", "comment": "Feb 28: Schmidt (elbow) is tentatively slated to being throwing bullpens in March and could face hitters in April or May, per MLB.com.", "nameKey": "clarke schmidt"}, {"name": "Zack Wheeler", "pos": "SP", "mlbTeam": "Philadelphia Phillies", "estReturnDate": "Apr 17, 2026", "status": "Out", "comment": "Mar 19: Wheeler (shoulder) will pitch in a minor-league game Monday, Todd Zolecki of MLB.com reports.", "nameKey": "zack wheeler"}, {"name": "Dylan Moore", "pos": "2B", "mlbTeam": "Philadelphia Phillies", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 19: Moore (foot) exercised the opt-out clause in his minor-league contract Thursday, Will Sammon of The Athletic reports.", "nameKey": "dylan moore"}, {"name": "Aidan Miller", "pos": "SS", "mlbTeam": "Philadelphia Phillies", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 17: Miller (back) is unlikely to be ready for Opening Day at Triple-A Lehigh Valley, Charlotte Varnes of The Athletic reports.", "nameKey": "aidan miller"}, {"name": "Michael Mercado", "pos": "RP", "mlbTeam": "Philadelphia Phillies", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 15: The Phillies reassigned Mercado (shoulder) to minor-league camp Thursday, Todd Zolecki of MLB.com reports.", "nameKey": "michael mercado"}, {"name": "Keaton Anthony", "pos": "1B", "mlbTeam": "Philadelphia Phillies", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "", "nameKey": "keaton anthony"}, {"name": "Max Lazar", "pos": "RP", "mlbTeam": "Philadelphia Phillies", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 10: Phillies manager Rob Thomson said Tuesday that Lazar is dealing with a \"mild\" oblique injury and is returning to big-league camp to be evaluated, Jayson Stark of The Athletic reports.", "nameKey": "max lazar"}, {"name": "Mark Kolozsvary", "pos": "C", "mlbTeam": "Philadelphia Phillies", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 1: Kolozsvary (undisclosed) agreed to a minor-league contract with the Phillies on Friday that includes an invitation to spring training, Will Sammon of The Athletic reports.", "nameKey": "mark kolozsvary"}, {"name": "Daniel Robert", "pos": "RP", "mlbTeam": "Philadelphia Phillies", "estReturnDate": "Mar 23, 2026", "status": "Day-To-Day", "comment": "Feb 23: The Phillies announced Wednesday that Robert will be delayed at the start of spring training due to a cardiovascular issue, Matt Gelb of The Athletic reports.", "nameKey": "daniel robert"}, {"name": "Christian McGowan", "pos": "RP", "mlbTeam": "Philadelphia Phillies", "estReturnDate": "Jul 1, 2026", "status": "Out", "comment": "Dec 9: McGowan will miss the remainder of the season following Tommy John surgery, Jonathan Mayo of MLB.com reports.", "nameKey": "christian mcgowan"}, {"name": "Chris Devenski", "pos": "RP", "mlbTeam": "Pittsburgh Pirates", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 13: Devenski was removed from Friday's Grapefruit League game against the Tigers after being struck in the head by a batted ball.", "nameKey": "chris devenski"}, {"name": "Oddanier Mosqueda", "pos": "RP", "mlbTeam": "Pittsburgh Pirates", "estReturnDate": "Apr 1, 2026", "status": "Out", "comment": "Feb 23: Mosqueda will not throw for a couple weeks due to left forearm inflammation, Kevin Gorman of TribLive.com reports.", "nameKey": "oddanier mosqueda"}, {"name": "Ronny Simon", "pos": "2B", "mlbTeam": "Pittsburgh Pirates", "estReturnDate": "Apr 1, 2026", "status": "Out", "comment": "Feb 23: Pirates director of sports medicine Todd Tomczyk said Monday that Simon (shoulder) is projected to return to game competition in late March or early April, Kevin Gorman of TribLive.com reports.", "nameKey": "ronny simon"}, {"name": "Jared Jones", "pos": "SP", "mlbTeam": "Pittsburgh Pirates", "estReturnDate": "May 25, 2026", "status": "60-Day-IL", "comment": "Feb 23: Pirates senior director of sports medicine Todd Tomczyk said Monday that Jones (elbow) should be ready for game action when he's eligible to return from the 60-day injured list in late May, Kevin Gorman of TribLive.com reports.", "nameKey": "jared jones"}, {"name": "Anthony Solometo", "pos": "SP", "mlbTeam": "Pittsburgh Pirates", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Feb 17: Solometo was pulled off his rehab assignment with Single-A Bradenton in late June after he experienced recurrent shoulder discomfort, Noah Hiles of the Pittsburgh Post-Gazette reports.", "nameKey": "anthony solometo"}, {"name": "Sung-Mun Song", "pos": "3B", "mlbTeam": "San Diego Padres", "estReturnDate": "Mar 23, 2026", "status": "Day-To-Day", "comment": "Mar 16: Padres manager Craig Stammen said Sunday that Song (oblique) has resumed swinging a bat, per 97.3 The Fan.", "nameKey": "sung mun song"}, {"name": "Joe Musgrove", "pos": "SP", "mlbTeam": "San Diego Padres", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 16: Musgrove (elbow) has had his workload eased back after pitching against Team Great Britain on March 4, and it's uncertain if he'll be ramped up in time for Opening Day, per MLB.com.", "nameKey": "joe musgrove"}, {"name": "Will Wagner", "pos": "3B", "mlbTeam": "San Diego Padres", "estReturnDate": "Apr 14, 2026", "status": "Out", "comment": "Mar 12: Wagner is dealing with an oblique strain and hasn't done any baseball activity since the beginning of March, Kevin Acee of the San Diego Union-Tribune reports.", "nameKey": "will wagner"}, {"name": "Matt Waldron", "pos": "SP", "mlbTeam": "San Diego Padres", "estReturnDate": "Apr 9, 2026", "status": "Out", "comment": "Mar 12: Waldron (lower body) threw \"about 25 pitches\" in a live batting-practice session Thursday, Kevin Acee of The San Diego Union-Tribune reports.", "nameKey": "matt waldron"}, {"name": "Bryan Hoeing", "pos": "RP", "mlbTeam": "San Diego Padres", "estReturnDate": "Feb 1, 2026", "status": "Out", "comment": "Mar 12: Hoeing (elbow) will undergo flexor tendon surgery and miss the entire 2026 season, Kevin Acee of the San Diego Union-Tribune reports.", "nameKey": "bryan hoeing"}, {"name": "Jhony Brito", "pos": "RP", "mlbTeam": "San Diego Padres", "estReturnDate": "Jul 1, 2026", "status": "60-Day-IL", "comment": "Mar 12: Brito (forearm) has been throwing bullpens in Padres camp, per MLB.com.", "nameKey": "jhony brito"}, {"name": "Jason Adam", "pos": "RP", "mlbTeam": "San Diego Padres", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 10: Adam (quadriceps) will throw one additional simulated game within the next few days with the goal of pitching in an exhibition over the weekend, Kevin Acee of The San Diego Union-Tribune reports.", "nameKey": "jason adam"}, {"name": "Yuki Matsui", "pos": "RP", "mlbTeam": "San Diego Padres", "estReturnDate": "Mar 26, 2026", "status": "Out", "comment": "Mar 9: Matsui (groin) was recently cleared to resume throwing off a mound, and he participated in defensive drills Monday, Kevin Acee of The San Diego Union-Tribune reports.", "nameKey": "yuki matsui"}, {"name": "Griffin Canning", "pos": "SP", "mlbTeam": "San Diego Padres", "estReturnDate": "Apr 27, 2026", "status": "Out", "comment": "Mar 3: Canning (Achilles) tossed a \"high-intensity\" bullpen session Tuesday, and his next step could be facing hitters, per MLB.com.", "nameKey": "griffin canning"}, {"name": "Blake Hunt", "pos": "C", "mlbTeam": "San Diego Padres", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 1: Hunt is dealing with an oblique injury and has been shut down from activity, Kevin Acee of The San Diego Union-Tribune reports.", "nameKey": "blake hunt"}, {"name": "Hayden Birdsong", "pos": "RP", "mlbTeam": "San Francisco Giants", "estReturnDate": "Jun 1, 2026", "status": "Out", "comment": "Mar 19: Birdsong (forearm/elbow) is scheduled to undergo Tommy John surgery next week, Alex Pavlovic of NBC Sports Bay Area reports.", "nameKey": "hayden birdsong"}, {"name": "Parks Harber", "pos": "3B", "mlbTeam": "San Francisco Giants", "estReturnDate": "Apr 27, 2026", "status": "Out", "comment": "Mar 18: The Giants announced Wednesday that Harber has been diagnosed with a Grade 2 right hamstring strain and will require 4-to-6 weeks of recovery time, Alex Pavlovic of NBC Sports Bay Area reports.", "nameKey": "parks harber"}, {"name": "Sam Hentges", "pos": "RP", "mlbTeam": "San Francisco Giants", "estReturnDate": "Mar 25, 2026", "status": "Day-To-Day", "comment": "Mar 18: Hentges (shoulder/knee) will throw one more bullpen session before advancing to facing hitters, Susan Slusser of the San Francisco Chronicle reports.", "nameKey": "sam hentges"}, {"name": "Reiver Sanmartin", "pos": "RP", "mlbTeam": "San Francisco Giants", "estReturnDate": "Jun 9, 2026", "status": "Out", "comment": "Mar 9: Sanmartin suffered a minor quadriceps strain during a recent exhibition game appearance for Team Colombia, Susan Slusser of the San Francisco Chronicle reports.", "nameKey": "reiver sanmartin"}, {"name": "Joel Peguero", "pos": "RP", "mlbTeam": "San Francisco Giants", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 4: Peguero (hamstring) threw a live batting practice session Friday and is on track to play this week, Maria Guardado of MLB.com reports.", "nameKey": "joel peguero"}, {"name": "Rowan Wick", "pos": "RP", "mlbTeam": "San Francisco Giants", "estReturnDate": "Feb 1, 2026", "status": "60-Day-IL", "comment": "Feb 15: The Giants placed Wick (elbow) on the 60-day injured list Sunday, Justice delos Santos of The San Jose Mercury News reports.", "nameKey": "rowan wick"}, {"name": "Jason Foley", "pos": "RP", "mlbTeam": "San Francisco Giants", "estReturnDate": "Jul 1, 2026", "status": "60-Day-IL", "comment": "Feb 14: The Giants signed Foley (shoulder) to a one-year contract Tuesday.", "nameKey": "jason foley"}, {"name": "Randy Rodriguez", "pos": "RP", "mlbTeam": "San Francisco Giants", "estReturnDate": "Feb 1, 2026", "status": "60-Day-IL", "comment": "Feb 10: The Giants placed Rodriguez (elbow) on the 60-day injured list Tuesday, Justice delos Santos of The San Jose Mercury News reports.", "nameKey": "randy rodriguez"}, {"name": "J.P. Crawford", "pos": "SS", "mlbTeam": "Seattle Mariners", "estReturnDate": "Mar 23, 2026", "status": "Day-To-Day", "comment": "Mar 18: Crawford received a cortisone injection in his injured shoulder Wednesday, and manager Dan Wilson said it's unclear if the shortstop will be ready to play in the March 26 season opener versus the Guardians, Ryan Divish of The Seattle Times reports.", "nameKey": "j p crawford"}, {"name": "Bryce Miller", "pos": "SP", "mlbTeam": "Seattle Mariners", "estReturnDate": "Mar 30, 2026", "status": "Out", "comment": "Mar 17: Miller (oblique) is scheduled to throw a bullpen session Tuesday, Shannon Drayer of SeattleSports.com reports.", "nameKey": "bryce miller"}, {"name": "Brennen Davis", "pos": "CF", "mlbTeam": "Seattle Mariners", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 14: Davis was removed from Satuday's Cactus League game against the Angels due to left hamstring tightness, Tim Booth of The Seattle Times reports.", "nameKey": "brennen davis"}, {"name": "Miles Mastrobuoni", "pos": "3B", "mlbTeam": "Seattle Mariners", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 11: Mastrobuoni went 2-for-2 with a double and a grand slam in Saturday's Cactus League matchup with the Giants.", "nameKey": "miles mastrobuoni"}, {"name": "Logan Evans", "pos": "SP", "mlbTeam": "Seattle Mariners", "estReturnDate": "Apr 1, 2026", "status": "60-Day-IL", "comment": "Feb 16: Evans underwent UCL reconstruction surgery with an internal brace Jan. 23 on his right elbow.", "nameKey": "logan evans"}, {"name": "Hunter Dobbins", "pos": "SP", "mlbTeam": "St. Louis Cardinals", "estReturnDate": "Apr 7, 2026", "status": "Out", "comment": "Mar 15: Cardinals manager Oliver Marmol said Sunday that Dobbins (knee) will begin the season on the injured list, Derrick Goold of the St. Louis Post-Dispatch reports.", "nameKey": "hunter dobbins"}, {"name": "Lars Nootbaar", "pos": "LF", "mlbTeam": "St. Louis Cardinals", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 12: Nootbaar (heels) has been increasing his agility drills and is soon slated to ramp up his running program, Derrick Goold of the St. Louis Post-Dispatch reports.", "nameKey": "lars nootbaar"}, {"name": "Zack Thompson", "pos": "RP", "mlbTeam": "St. Louis Cardinals", "estReturnDate": "Mar 26, 2026", "status": "Out", "comment": "Mar 2: The Cardinals reassigned Thompson (shoulder) to minor-league camp Monday.", "nameKey": "zack thompson"}, {"name": "Ixan Henderson", "pos": "SP", "mlbTeam": "St. Louis Cardinals", "estReturnDate": "Mar 26, 2026", "status": "Out", "comment": "Feb 12: Henderson is shut down from throwing in Cardinals camp due to a left flexor strain, Brian Walton of TheCardinalNation.com reports.", "nameKey": "ixan henderson"}, {"name": "Victor Santos", "pos": "RP", "mlbTeam": "St. Louis Cardinals", "estReturnDate": "Mar 26, 2026", "status": "Out", "comment": "Dec 9: Santos (elbow) has compiled a 3.97 ERA, 1.38 WHIP and 26:7 K:BB across 34 innings over his first nine outings (seven starts) in the Dominican Winter League.", "nameKey": "victor santos"}, {"name": "Sem Robberse", "pos": "SP", "mlbTeam": "St. Louis Cardinals", "estReturnDate": "Jul 1, 2026", "status": "Out", "comment": "Nov 24: Robberse (elbow) signed a minor-league contract with the Cardinals on Monday, which includes an invitation to spring training, Derrick Goold of the St. Louis Post-Dispatch reports.", "nameKey": "sem robberse"}, {"name": "Taylor Walls", "pos": "SS", "mlbTeam": "Tampa Bay Rays", "estReturnDate": "Apr 14, 2026", "status": "Out", "comment": "Mar 20: Walls received a cortisone injection in his right oblique and is expected to be sideline at least 3-to-4 weeks, Ryan Bass of FanDuel Sports Network Sun reports.", "nameKey": "taylor walls"}, {"name": "Edwin Uceta", "pos": "RP", "mlbTeam": "Tampa Bay Rays", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 14: Uceta (shoulder) threw a bullpen session Saturday, John Romano of the Tampa Bay Times reports.", "nameKey": "edwin uceta"}, {"name": "Austin Vernon", "pos": "RP", "mlbTeam": "Tampa Bay Rays", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 4: The Rays have shut Vernon down from throwing due to right elbow soreness, per MLB.com.", "nameKey": "austin vernon"}, {"name": "John Rooney", "pos": "RP", "mlbTeam": "Tampa Bay Rays", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Mar 2: The Rays signed Rooney (elbow) to a minor-league contract Nov. 15.", "nameKey": "john rooney"}, {"name": "Steven Wilson", "pos": "RP", "mlbTeam": "Tampa Bay Rays", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 2: Wilson said Sunday that his lower back has responded well to an injection, and he hopes to be ready to make his season debut shortly after Opening Day, Marc Topkin of the Tampa Bay Times reports.", "nameKey": "steven wilson"}, {"name": "Logan Driscoll", "pos": "C", "mlbTeam": "Tampa Bay Rays", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "Feb 18: The Rays released Driscoll (ankle) on Friday, Ryan Bass of FanDuel Sports Network Sun reports.", "nameKey": "logan driscoll"}, {"name": "Manuel Rodriguez", "pos": "RP", "mlbTeam": "Tampa Bay Rays", "estReturnDate": "Jun 1, 2026", "status": "60-Day-IL", "comment": "Feb 10: Rodriguez will have right elbow surgery Aug. 8 to address a flexor tendon repair, and his UCL will be evaluated during the surgery to determine if any additional procedures are needed, Marc Topkin of the Tampa Bay Times reports.", "nameKey": "manuel rodriguez"}, {"name": "Ricardo Genoves", "pos": "C", "mlbTeam": "Tampa Bay Rays", "estReturnDate": "Mar 20, 2026", "status": "Day-To-Day", "comment": "", "nameKey": "ricardo genoves"}, {"name": "Cody Bradford", "pos": "SP", "mlbTeam": "Texas Rangers", "estReturnDate": "May 1, 2026", "status": "Out", "comment": "Mar 19: Bradford (elbow) began facing live hitters in batting practice and should be ready for a rehab assignment when the 2026 regular season begins, MLB.com reports.", "nameKey": "cody bradford"}, {"name": "Jordan Montgomery", "pos": "SP", "mlbTeam": "Texas Rangers", "estReturnDate": "Jul 1, 2026", "status": "60-Day-IL", "comment": "Mar 8: The Rangers signed Montgomery (elbow) to a one-year, $1.25 million contract Wednesday, Evan Grant of The Dallas Morning News reports.", "nameKey": "jordan montgomery"}, {"name": "Sebastian Walcott", "pos": "SS", "mlbTeam": "Texas Rangers", "estReturnDate": "Aug 3, 2026", "status": "Out", "comment": "Feb 24: Rangers GM Ross Fenstermaker said Tuesday that Walcott could be ready for game action in August, \"if all things according to plan\" in his rehab from the internal brace procedure he underwent on his right elbow, Shawn McFarland of The Dallas Morning News reports.", "nameKey": "sebastian walcott"}, {"name": "Cody Freeman", "pos": "3B", "mlbTeam": "Texas Rangers", "estReturnDate": "Apr 5, 2026", "status": "Out", "comment": "Feb 21: Freeman is not in the Rangers' starting lineup against the Twins on Wednesday.", "nameKey": "cody freeman"}, {"name": "Nabil Crismatt", "pos": "SP", "mlbTeam": "Texas Rangers", "estReturnDate": "Feb 1, 2026", "status": "Out", "comment": "Feb 13: Crismatt will undergo surgery to repair a torn UCL in his right elbow, Evan Grant of The Dallas Morning News reports.", "nameKey": "nabil crismatt"}, {"name": "Declan Cronin", "pos": "RP", "mlbTeam": "Texas Rangers", "estReturnDate": "Feb 1, 2026", "status": "Out", "comment": "Oct 7: Cronin (elbow) signed a two-year, minor-league contract with the Rangers on Tuesday, Bob Nightengale of USA Today reports.", "nameKey": "declan cronin"}, {"name": "Trey Yesavage", "pos": "SP", "mlbTeam": "Toronto Blue Jays", "estReturnDate": "Apr 14, 2026", "status": "Out", "comment": "Mar 19: Yesavage will open the season on the 15-day injured list due to a right shoulder impingement, Mitch Bannon of The Athletic reports.", "nameKey": "trey yesavage"}, {"name": "Jose Berrios", "pos": "SP", "mlbTeam": "Toronto Blue Jays", "estReturnDate": "Apr 14, 2026", "status": "Out", "comment": "Mar 18: Berrios will have an in-person visit with a doctor Tuesday to evaluate his elbow inflammation, Keegan Matheson of MLB.com reports.", "nameKey": "jose berrios"}, {"name": "Yimi Garcia", "pos": "RP", "mlbTeam": "Toronto Blue Jays", "estReturnDate": "Apr 10, 2026", "status": "Out", "comment": "Mar 14: Garcia (elbow) threw off a mound Saturday for the first time this spring, Arden Zwelling of Sportsnet.ca reports.", "nameKey": "yimi garcia"}, {"name": "Shane Bieber", "pos": "SP", "mlbTeam": "Toronto Blue Jays", "estReturnDate": "Apr 30, 2026", "status": "Out", "comment": "Mar 13: Bieber (forearm) will continue throwing from flat ground over the next several days and will be reevaluated late next week, Arden Zwelling of Sportsnet.ca reports.", "nameKey": "shane bieber"}, {"name": "Chay Yeager", "pos": "RP", "mlbTeam": "Toronto Blue Jays", "estReturnDate": "Apr 1, 2026", "status": "Out", "comment": "Feb 25: Yeager will undergo season-ending UCL surgery on his right elbow Wednesday, Arden Zwelling of Sportsnet.ca reports.", "nameKey": "chay yeager"}, {"name": "Bowden Francis", "pos": "SP", "mlbTeam": "Toronto Blue Jays", "estReturnDate": "Apr 1, 2026", "status": "60-Day-IL", "comment": "Feb 18: Manager John Schneider revealed Tuesday that Francis is undergoing UCL reconstruction surgery on his right elbow and will miss the 2026 season, Mitch Bannon of The Athletic reports.", "nameKey": "bowden francis"}, {"name": "Anthony Santander", "pos": "RF", "mlbTeam": "Toronto Blue Jays", "estReturnDate": "Aug 1, 2026", "status": "Out", "comment": "Feb 10: Blue Jays manager John Schneider said Tuesday that Santander's left shoulder and back \"finally feel normal\" again, Mitch Bannon of The Athletic reports.", "nameKey": "anthony santander"}, {"name": "DJ Herz", "pos": "SP", "mlbTeam": "Washington Nationals", "estReturnDate": "Jul 1, 2026", "status": "60-Day-IL", "comment": "Mar 13: Herz (elbow) threw a bullpen session Friday, Jessica Camerato of MLB.com reports.", "nameKey": "dj herz"}, {"name": "Trevor Williams", "pos": "SP", "mlbTeam": "Washington Nationals", "estReturnDate": "Jun 1, 2026", "status": "60-Day-IL", "comment": "Mar 4: The Nationals announced that Williams (elbow) has resumed his throwing progression and made 25 tosses from 60 feet Wednesday, Jessica Camerato of MLB.com reports.", "nameKey": "trevor williams"}, {"name": "Joan Adon", "pos": "RP", "mlbTeam": "Washington Nationals", "estReturnDate": "Mar 20, 2026", "status": "Out", "comment": "Dec 9: no", "nameKey": "joan adon"}, {"name": "Tyler Stuart", "pos": "SP", "mlbTeam": "Washington Nationals", "estReturnDate": "Sep 1, 2026", "status": "Out", "comment": "Nov 19: Stuart underwent Tommy John surgery earlier this week, Bobby Blanco of MASNSports.com reports.", "nameKey": "tyler stuart"}, {"name": "Jarlin Susana", "pos": "RP", "mlbTeam": "Washington Nationals", "estReturnDate": "Jul 1, 2026", "status": "Out", "comment": "Oct 2: Susana underwent surgery last week to repair a right lat tear, Spencer Nusbaum of The Washington Post reports.", "nameKey": "jarlin susana"}, {"name": "Travis Sykora", "pos": "SP", "mlbTeam": "Washington Nationals", "estReturnDate": "Feb 1, 2026", "status": "Out", "comment": "Oct 2: Sykora will undergo a UCL reconstruction on his right elbow in two weeks, Andrew Golden of The Washington Post reports.", "nameKey": "travis sykora"}];
+    const roundsEl = document.getElementById('rounds');
+    const searchInput = document.getElementById('searchInput');
+    const teamSelect = document.getElementById('teamSelect');
+    const viewSelect = document.getElementById('viewSelect');
+    const roundSelect = document.getElementById('roundSelect');
+    const keepersOnlyInput = document.getElementById('keepersOnly');
+    const densityBtn = document.getElementById('densityBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const resultsSummary = document.getElementById('resultsSummary');
+    const activeFilters = document.getElementById('activeFilters');
+    const injuryBody = document.getElementById('injuryBody');
+    const injuryEmpty = document.getElementById('injuryEmpty');
+    const injurySummaryCount = document.getElementById('injurySummaryCount');
+    const commentTooltip = document.getElementById('commentTooltip');
+
+    const totalPicks = rounds.reduce((sum, round) => sum + round.picks.length, 0);
+    const picksPerRound = Math.max(...rounds.map((round) => round.picks.length));
+    const uniqueTeams = [...new Set(rounds.flatMap((round) => round.picks.map((pick) => pick.team)))].sort();
+    const TEAM_PALETTE = [
+      '#0f4c81', // deep blue
+      '#d1495b', // red
+      '#2a9d8f', // teal
+      '#7b2cbf', // violet
+      '#f77f00', // orange
+      '#3a86ff', // bright blue
+      '#8d6e63', // brown
+      '#6a994e', // green
+      '#ef476f', // pink-red
+      '#1f7a8c', // cyan-teal
+      '#8338ec', // purple
+      '#bc6c25'  // amber-brown
+    ];
+    const teamColorByName = new Map(
+      uniqueTeams.map((team, idx) => [team, TEAM_PALETTE[idx % TEAM_PALETTE.length]])
+    );
+    const injuryByNameKey = new Map(injuries.map((injury) => [injury.nameKey, injury]));
+    const keeperNameKeysByTeam = new Map();
+
+    uniqueTeams.forEach((team) => {
+      const option = document.createElement('option');
+      option.value = team;
+      option.textContent = team;
+      teamSelect.appendChild(option);
+    });
+
+    rounds.forEach((round) => {
+      const option = document.createElement('option');
+      option.value = String(round.round);
+      option.textContent = `Round ${round.round}`;
+      roundSelect.appendChild(option);
+
+      round.picks.forEach((pick) => {
+        if (!pick.player) {
+          return;
+        }
+        const set = keeperNameKeysByTeam.get(pick.team) || new Set();
+        set.add(normalizeName(extractPlayerName(pick.player)));
+        keeperNameKeysByTeam.set(pick.team, set);
+      });
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    const savedDensity = localStorage.getItem('draftDensity');
+    const state = {
+      q: (params.get('q') || '').trim(),
+      team: '',
+      view: 'round',
+      round: '',
+      keepersOnly: params.get('keepers') === '1',
+      density: savedDensity === 'compact' ? 'compact' : 'comfortable'
+    };
+
+    const paramTeam = params.get('team') || '';
+    if (uniqueTeams.includes(paramTeam)) {
+      state.team = paramTeam;
+    }
+
+    const paramRound = params.get('round') || '';
+    if (/^\d+$/.test(paramRound)) {
+      const roundNum = Number(paramRound);
+      if (roundNum >= 1 && roundNum <= rounds.length) {
+        state.round = String(roundNum);
+      }
+    }
+
+    const paramView = params.get('view') || '';
+    if (paramView === 'round' || paramView === 'team') {
+      state.view = paramView;
+    }
+
+    searchInput.value = state.q;
+    teamSelect.value = state.team;
+    viewSelect.value = state.view;
+    roundSelect.value = state.round;
+    keepersOnlyInput.checked = state.keepersOnly;
+    document.body.classList.toggle('density-compact', state.density === 'compact');
+    densityBtn.setAttribute('aria-pressed', String(state.density === 'compact'));
+    densityBtn.textContent = state.density === 'compact' ? 'Comfortable view' : 'Compact view';
+
+    function syncRoundControl() {
+      const disabled = state.view === 'team';
+      roundSelect.disabled = disabled;
+      if (disabled) {
+        state.round = '';
+        roundSelect.value = '';
+      } else {
+        roundSelect.value = state.round;
+      }
+    }
+
+    syncRoundControl();
+
+    function escapeRegExp(value) {
+      return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function normalizeName(value) {
+      return (value || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/'/g, '')
+        .replace(/[^a-z0-9 ]+/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function extractPlayerName(playerText) {
+      return (playerText || '').split('(')[0].trim();
+    }
+
+    function getInjuryForPick(pick) {
+      if (!pick.player) {
+        return null;
+      }
+      const key = normalizeName(extractPlayerName(pick.player));
+      return injuryByNameKey.get(key) || null;
+    }
+
+    function getFilteredInjuries(qLower, selectedTeam) {
+      let scoped = injuries;
+      if (selectedTeam) {
+        const keeperKeys = keeperNameKeysByTeam.get(selectedTeam) || new Set();
+        scoped = scoped.filter((injury) => keeperKeys.has(injury.nameKey));
+      }
+
+      if (!qLower) {
+        return scoped;
+      }
+
+      return scoped.filter((injury) => {
+        const haystack = `${injury.name} ${injury.mlbTeam} ${injury.status} ${injury.comment || ''}`.toLowerCase();
+        return haystack.includes(qLower);
+      });
+    }
+
+    function positionTooltip(target) {
+      if (!target || commentTooltip.hidden) {
+        return;
+      }
+      const rect = target.getBoundingClientRect();
+      const tipRect = commentTooltip.getBoundingClientRect();
+      const gap = 8;
+      let top = rect.bottom + gap;
+      let left = rect.left + ((rect.width - tipRect.width) / 2);
+
+      if (top + tipRect.height > window.innerHeight - 8) {
+        top = rect.top - tipRect.height - gap;
+      }
+      if (left < 8) {
+        left = 8;
+      } else if (left + tipRect.width > window.innerWidth - 8) {
+        left = window.innerWidth - tipRect.width - 8;
+      }
+      if (top < 8) {
+        top = 8;
+      }
+
+      commentTooltip.style.top = `${top}px`;
+      commentTooltip.style.left = `${left}px`;
+    }
+
+    function showTooltip(target) {
+      const comment = target.getAttribute('data-comment');
+      if (!comment) {
+        return;
+      }
+      commentTooltip.textContent = comment;
+      commentTooltip.hidden = false;
+      requestAnimationFrame(() => {
+        commentTooltip.classList.add('visible');
+        positionTooltip(target);
+      });
+    }
+
+    function hideTooltip() {
+      commentTooltip.classList.remove('visible');
+      commentTooltip.hidden = true;
+    }
+
+    function wireCommentTrigger(el, comment) {
+      if (!comment) {
+        return;
+      }
+      el.classList.add('comment-target');
+      el.setAttribute('data-comment', comment);
+      el.setAttribute('aria-describedby', 'commentTooltip');
+      if (el.tabIndex < 0) {
+        el.tabIndex = 0;
+      }
+      el.addEventListener('mouseenter', () => showTooltip(el));
+      el.addEventListener('focus', () => showTooltip(el));
+      el.addEventListener('mouseleave', () => hideTooltip());
+      el.addEventListener('blur', () => hideTooltip());
+    }
+
+    function teamColor(teamName) {
+      return teamColorByName.get(teamName) || '#7f94a7';
+    }
+
+    function getOverallPick(roundNumber, pickNumber) {
+      return ((roundNumber - 1) * picksPerRound) + pickNumber;
+    }
+
+    function resetFilters() {
+      state.q = '';
+      state.team = '';
+      state.round = '';
+      state.keepersOnly = false;
+      searchInput.value = '';
+      teamSelect.value = '';
+      roundSelect.value = '';
+      keepersOnlyInput.checked = false;
+    }
+
+    function renderFilterTags() {
+      activeFilters.innerHTML = '';
+
+      const tags = [];
+      if (state.q) {
+        tags.push({ key: 'q', label: `Search: ${state.q}` });
+      }
+      if (state.team) {
+        tags.push({ key: 'team', label: `Team: ${state.team}` });
+      }
+      if (state.view === 'team') {
+        tags.push({ key: 'view', label: 'Mode: Team Timeline' });
+      }
+      if (state.keepersOnly) {
+        tags.push({ key: 'keepers', label: 'Keepers only' });
+      }
+      if (state.round) {
+        tags.push({ key: 'round', label: `Round: ${state.round}` });
+      }
+
+      tags.forEach((tag) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'filter-tag';
+        btn.setAttribute('aria-label', `Remove ${tag.label} filter`);
+        btn.innerHTML = `${tag.label}<span class="x">×</span>`;
+        btn.addEventListener('click', () => {
+          if (tag.key === 'q') {
+            state.q = '';
+            searchInput.value = '';
+          } else if (tag.key === 'team') {
+            state.team = '';
+            teamSelect.value = '';
+          } else if (tag.key === 'view') {
+            state.view = 'round';
+            viewSelect.value = 'round';
+            syncRoundControl();
+          } else if (tag.key === 'round') {
+            state.round = '';
+            roundSelect.value = '';
+          } else if (tag.key === 'keepers') {
+            state.keepersOnly = false;
+            keepersOnlyInput.checked = false;
+          }
+          applyAndRender();
+        });
+        activeFilters.appendChild(btn);
+      });
+    }
+
+    function appendHighlightedText(parent, text, query) {
+      if (!query) {
+        parent.textContent = text;
+        return;
+      }
+
+      const regex = new RegExp(escapeRegExp(query), 'ig');
+      let lastIndex = 0;
+      let match;
+
+      while ((match = regex.exec(text)) !== null) {
+        if (match.index > lastIndex) {
+          parent.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+        }
+        const mark = document.createElement('mark');
+        mark.textContent = text.slice(match.index, match.index + match[0].length);
+        parent.appendChild(mark);
+        lastIndex = match.index + match[0].length;
+      }
+
+      if (lastIndex < text.length) {
+        parent.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+    }
+
+    function buildPickRow(pick, roundNumber, query) {
+      const item = document.createElement('li');
+      item.className = 'pick-row';
+      if (pick.player) {
+        item.classList.add('has-keeper');
+      }
+
+      const roundPick = document.createElement('span');
+      roundPick.className = 'round-pick';
+      roundPick.textContent = `${pick.pick}`;
+
+      const swatch = document.createElement('span');
+      swatch.className = 'team-swatch';
+      swatch.style.background = teamColor(pick.team);
+
+      const main = document.createElement('div');
+      main.className = 'pick-main';
+
+      const teamName = document.createElement('span');
+      teamName.className = 'team-name';
+      appendHighlightedText(teamName, pick.team, query);
+
+      const player = document.createElement('span');
+      player.className = pick.player ? 'player' : 'player empty';
+      const injury = getInjuryForPick(pick);
+      if (pick.player) {
+        if (pick.url) {
+          const a = document.createElement('a');
+          a.href = pick.url;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          appendHighlightedText(a, pick.player, query);
+          if (injury?.comment) {
+            wireCommentTrigger(a, injury.comment);
+          }
+          player.appendChild(a);
+        } else {
+          appendHighlightedText(player, pick.player, query);
+          if (injury?.comment) {
+            wireCommentTrigger(player, injury.comment);
+          }
+        }
+
+        if (injury) {
+          const statusPill = document.createElement('span');
+          statusPill.className = 'injury-pill';
+          statusPill.textContent = injury.status;
+          wireCommentTrigger(statusPill, injury.comment);
+          player.appendChild(statusPill);
+        }
+      } else {
+        player.textContent = 'Open pick';
+      }
+
+      const overall = document.createElement('span');
+      overall.className = 'overall-cell';
+      overall.textContent = `#${getOverallPick(roundNumber, pick.pick)}`;
+
+      main.appendChild(teamName);
+      main.appendChild(player);
+      item.appendChild(roundPick);
+      item.appendChild(swatch);
+      item.appendChild(main);
+      item.appendChild(overall);
+
+      return item;
+    }
+
+    function matchesPick(pick, qLower, selectedTeam, keepersOnly) {
+      const teamMatches = !selectedTeam || pick.team === selectedTeam;
+      if (!teamMatches) {
+        return false;
+      }
+      if (keepersOnly && !pick.player) {
+        return false;
+      }
+
+      if (!qLower) {
+        return true;
+      }
+
+      return pick.team.toLowerCase().includes(qLower) || pick.player.toLowerCase().includes(qLower);
+    }
+
+    function renderInjuries(qLower, selectedTeam) {
+      injuryBody.innerHTML = '';
+      const filtered = getFilteredInjuries(qLower, selectedTeam);
+
+      injurySummaryCount.textContent = `${filtered.length} / ${injuries.length}`;
+      injuryEmpty.hidden = filtered.length !== 0;
+
+      filtered.forEach((injury) => {
+        const tr = document.createElement('tr');
+
+        const playerTd = document.createElement('td');
+        playerTd.setAttribute('data-label', 'Player');
+        if (injury.comment) {
+          const playerBtn = document.createElement('button');
+          playerBtn.type = 'button';
+          playerBtn.className = 'injury-inline-btn';
+          playerBtn.textContent = `${injury.name} (${injury.pos})`;
+          wireCommentTrigger(playerBtn, injury.comment);
+          playerTd.appendChild(playerBtn);
+        } else {
+          playerTd.textContent = `${injury.name} (${injury.pos})`;
+        }
+
+        const teamTd = document.createElement('td');
+        teamTd.setAttribute('data-label', 'MLB Team');
+        teamTd.textContent = injury.mlbTeam || '—';
+
+        const returnTd = document.createElement('td');
+        returnTd.setAttribute('data-label', 'Return');
+        returnTd.textContent = injury.estReturnDate || '—';
+
+        const statusTd = document.createElement('td');
+        statusTd.setAttribute('data-label', 'Status');
+        if (injury.comment) {
+          const statusBtn = document.createElement('button');
+          statusBtn.type = 'button';
+          statusBtn.className = 'injury-inline-btn injury-status-pill';
+          statusBtn.textContent = injury.status || '—';
+          wireCommentTrigger(statusBtn, injury.comment);
+          statusTd.appendChild(statusBtn);
+        } else {
+          const statusSpan = document.createElement('span');
+          statusSpan.className = 'injury-status-pill';
+          statusSpan.textContent = injury.status || '—';
+          statusTd.appendChild(statusSpan);
+        }
+
+        tr.appendChild(playerTd);
+        tr.appendChild(teamTd);
+        tr.appendChild(returnTd);
+        tr.appendChild(statusTd);
+        injuryBody.appendChild(tr);
+      });
+    }
+
+    function updateUrl() {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('q');
+      url.searchParams.delete('team');
+      url.searchParams.delete('view');
+      url.searchParams.delete('round');
+      url.searchParams.delete('keepers');
+
+      if (state.q) {
+        url.searchParams.set('q', state.q);
+      }
+      if (state.team) {
+        url.searchParams.set('team', state.team);
+      }
+      if (state.keepersOnly) {
+        url.searchParams.set('keepers', '1');
+      }
+      if (state.view === 'team') {
+        url.searchParams.set('view', 'team');
+      }
+      if (state.view === 'round' && state.round) {
+        url.searchParams.set('round', state.round);
+      }
+
+      history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+    }
+
+    function scrollToRound(roundValue) {
+      if (!roundValue) {
+        return;
+      }
+      const target = document.getElementById(`round-${roundValue}`);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function render() {
+      roundsEl.innerHTML = '';
+
+      const q = state.q;
+      const qLower = q.toLowerCase();
+      const selectedTeam = state.team;
+      const keepersOnly = state.keepersOnly;
+      renderInjuries(qLower, selectedTeam);
+      let shownPicks = 0;
+      let shownTeamPicks = 0;
+
+      if (state.view === 'round') {
+        rounds.forEach((round) => {
+          const filtered = round.picks.filter((pick) => matchesPick(pick, qLower, selectedTeam, keepersOnly));
+          if (filtered.length === 0) {
+            return;
+          }
+
+          const card = document.createElement('article');
+          card.className = 'round';
+          card.id = `round-${round.round}`;
+
+          const h2 = document.createElement('h2');
+          h2.textContent = `Round ${round.round}`;
+          card.appendChild(h2);
+
+          const list = document.createElement('ol');
+
+          filtered.forEach((pick) => {
+            shownPicks += 1;
+            if (selectedTeam && pick.team === selectedTeam) {
+              shownTeamPicks += 1;
+            }
+            list.appendChild(buildPickRow(pick, round.round, q));
+          });
+
+          card.appendChild(list);
+          roundsEl.appendChild(card);
+        });
+      } else {
+        const teamsToRender = selectedTeam ? [selectedTeam] : uniqueTeams;
+
+        teamsToRender.forEach((teamName) => {
+          const timelinePicks = [];
+          rounds.forEach((round) => {
+            round.picks.forEach((pick) => {
+              if (pick.team !== teamName) {
+                return;
+              }
+              if (keepersOnly && !pick.player) {
+                return;
+              }
+              const matchesQuery = !qLower
+                || pick.team.toLowerCase().includes(qLower)
+                || pick.player.toLowerCase().includes(qLower);
+              if (!matchesQuery) {
+                return;
+              }
+              timelinePicks.push({ ...pick, round: round.round });
+            });
+          });
+
+          timelinePicks.sort((a, b) => (a.round - b.round) || (a.pick - b.pick));
+          if (timelinePicks.length === 0) {
+            return;
+          }
+
+          const card = document.createElement('article');
+          card.className = 'round';
+          card.id = `team-${teamName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+
+          const h2 = document.createElement('h2');
+          h2.textContent = teamName;
+          h2.style.borderLeft = `4px solid ${teamColor(teamName)}`;
+          h2.style.paddingLeft = '10px';
+          card.appendChild(h2);
+
+          const list = document.createElement('ol');
+          timelinePicks.forEach((pick) => {
+            shownPicks += 1;
+            if (selectedTeam && pick.team === selectedTeam) {
+              shownTeamPicks += 1;
+            }
+            list.appendChild(buildPickRow(pick, pick.round, q));
+          });
+
+          card.appendChild(list);
+          roundsEl.appendChild(card);
+        });
+      }
+
+      if (shownPicks === 0) {
+        const empty = document.createElement('div');
+        empty.className = 'no-results';
+        empty.innerHTML = '<p>No picks match the current filters.</p>';
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = 'Reset filters';
+        btn.addEventListener('click', () => {
+          resetFilters();
+          applyAndRender();
+        });
+        empty.appendChild(btn);
+        roundsEl.appendChild(empty);
+      }
+
+      let summary = `Showing ${shownPicks} of ${totalPicks} picks`;
+      if (selectedTeam) {
+        summary += ` · ${selectedTeam}: ${shownTeamPicks} picks`;
+      }
+      if (state.view === 'round' && state.round && !document.getElementById(`round-${state.round}`)) {
+        summary += ` · Round ${state.round} hidden by current filters`;
+      }
+      resultsSummary.textContent = summary;
+      renderFilterTags();
+    }
+
+    function applyAndRender() {
+      updateUrl();
+      render();
+    }
+
+    searchInput.addEventListener('input', () => {
+      state.q = searchInput.value.trim();
+      applyAndRender();
+    });
+
+    teamSelect.addEventListener('change', () => {
+      state.team = teamSelect.value;
+      applyAndRender();
+    });
+
+    keepersOnlyInput.addEventListener('change', () => {
+      state.keepersOnly = keepersOnlyInput.checked;
+      applyAndRender();
+    });
+
+    viewSelect.addEventListener('change', () => {
+      state.view = viewSelect.value;
+      if (state.view === 'team') {
+        state.round = '';
+      }
+      syncRoundControl();
+      applyAndRender();
+    });
+
+    roundSelect.addEventListener('change', () => {
+      if (state.view !== 'round') {
+        return;
+      }
+      state.round = roundSelect.value;
+      updateUrl();
+      scrollToRound(state.round);
+      renderFilterTags();
+    });
+
+    densityBtn.addEventListener('click', () => {
+      state.density = state.density === 'compact' ? 'comfortable' : 'compact';
+      document.body.classList.toggle('density-compact', state.density === 'compact');
+      densityBtn.setAttribute('aria-pressed', String(state.density === 'compact'));
+      densityBtn.textContent = state.density === 'compact' ? 'Comfortable view' : 'Compact view';
+      localStorage.setItem('draftDensity', state.density);
+    });
+
+    clearBtn.addEventListener('click', () => {
+      resetFilters();
+      applyAndRender();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        hideTooltip();
+      }
+    });
+    window.addEventListener('scroll', hideTooltip, { passive: true });
+    window.addEventListener('resize', hideTooltip);
+
+    render();
+    if (state.round) {
+      setTimeout(() => scrollToRound(state.round), 0);
+    }

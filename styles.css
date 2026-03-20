@@ -1,0 +1,511 @@
+    :root {
+      --bg: #f2f6fa;
+      --panel: #ffffff;
+      --text: #102231;
+      --muted: #5d6f7f;
+      --line: #d6dfe8;
+      --accent: #0b6fb7;
+      --link: #1d5f94;
+      --shadow: 0 10px 22px rgba(16, 24, 40, 0.08);
+      --radius: 12px;
+      --li-pad-y: 7px;
+      --team-font-size: 0.92rem;
+      --player-font-size: 0.82rem;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top left, #ffffff 0%, var(--bg) 48%, #e7eef5 100%);
+    }
+    .wrap {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 22px 16px 36px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.35rem, 2.4vw, 1.95rem);
+    }
+    .sub {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .pill {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.74rem;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+    .rounds {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 14px;
+    }
+    .round {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .round h2 {
+      margin: 0;
+      padding: 10px 12px;
+      font-size: 0.95rem;
+      background: #ecf2f8;
+      border-bottom: 1px solid var(--line);
+    }
+    ol {
+      margin: 0;
+      padding: 8px 10px 12px;
+      list-style: none;
+    }
+    li {
+      padding: var(--li-pad-y) 0;
+      padding-left: 8px;
+      padding-right: 8px;
+      border-bottom: 1px dashed #e3e9f0;
+      line-height: 1.2;
+      border-radius: 8px;
+    }
+    li + li {
+      margin-top: 4px;
+    }
+    li:last-child { border-bottom: 0; }
+    li.has-keeper {
+      background: #f3f5f7;
+    }
+    .pick-row {
+      display: grid;
+      grid-template-columns: 42px 14px minmax(0, 1fr) 64px;
+      gap: 8px;
+      align-items: stretch;
+    }
+    .round-pick {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #5c7388;
+      background: #edf3f8;
+      border: 1px solid #d4e0ea;
+      border-radius: 999px;
+      padding: 0 8px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-self: start;
+      align-self: center;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .team-swatch {
+      width: 100%;
+      height: 100%;
+      align-self: stretch;
+      border-radius: 3px;
+      box-shadow: 0 0 0 1px rgba(16, 34, 49, 0.12);
+    }
+    .pick-main {
+      min-width: 0;
+    }
+    .team-name {
+      display: block;
+      font-size: var(--team-font-size);
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+    .overall-cell {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #5c7388;
+      background: #edf3f8;
+      border: 1px solid #d4e0ea;
+      border-radius: 999px;
+      padding: 0 8px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-self: end;
+      align-self: center;
+      margin-top: 1px;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+    .player {
+      display: block;
+      margin-top: 2px;
+      font-size: var(--player-font-size);
+      color: var(--link);
+      overflow-wrap: anywhere;
+    }
+    .player.empty {
+      color: #8c99a6;
+      font-style: italic;
+    }
+    .player a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    .player a:hover { text-decoration: underline; }
+    .injury-pill {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 6px;
+      padding: 1px 7px;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      border: 1px solid #d6b45a;
+      background: #fff4cf;
+      color: #6d4e03;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .comment-target {
+      cursor: help;
+    }
+    .comment-target:focus-visible {
+      outline: 2px solid #9ec8eb;
+      outline-offset: 1px;
+      border-radius: 4px;
+    }
+    .legend {
+      margin-top: 14px;
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+    .controls {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: 2fr 1.2fr 1fr auto;
+      gap: 10px;
+      align-items: end;
+      padding: 10px;
+      margin: 0 0 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(3px);
+      box-shadow: var(--shadow);
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-width: 0;
+    }
+    .control-group label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .control-group input,
+    .control-group select {
+      width: 100%;
+      height: 36px;
+      border: 1px solid #cdd8e3;
+      border-radius: 8px;
+      padding: 0 10px;
+      font-size: 0.9rem;
+      color: var(--text);
+      background: #fff;
+    }
+    .keepers-group .keepers-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      height: 36px;
+      border: 1px solid #cdd8e3;
+      border-radius: 8px;
+      padding: 0 10px;
+      background: #fff;
+      font-size: 0.84rem;
+      color: #3f5669;
+      user-select: none;
+      cursor: pointer;
+    }
+    .keepers-group .keepers-toggle:focus-within {
+      outline: 2px solid #9ec8eb;
+      outline-offset: 1px;
+      border-color: var(--accent);
+    }
+    .keepers-group .keepers-toggle input {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+      accent-color: #0b6fb7;
+    }
+    .control-group select:disabled {
+      background: #eef3f8;
+      color: #8493a0;
+      cursor: not-allowed;
+    }
+    .control-group input:focus,
+    .control-group select:focus,
+    .control-actions button:focus {
+      outline: 2px solid #9ec8eb;
+      outline-offset: 1px;
+      border-color: var(--accent);
+    }
+    .control-actions {
+      display: flex;
+      align-items: end;
+      gap: 8px;
+    }
+    .control-actions button {
+      height: 36px;
+      border: 1px solid #bdd2e4;
+      border-radius: 8px;
+      background: #f2f7fc;
+      color: #0f3f67;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0 12px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .control-actions button:hover {
+      background: #e7f1fa;
+    }
+    .results {
+      grid-column: 1 / -1;
+      font-size: 0.82rem;
+      color: var(--muted);
+      min-height: 1.1rem;
+    }
+    .filter-tags {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      min-height: 1.2rem;
+    }
+    .filter-tag {
+      border: 1px solid #c7d7e6;
+      border-radius: 999px;
+      background: #edf5fc;
+      color: #1b4264;
+      font-size: 0.76rem;
+      padding: 3px 9px;
+      cursor: pointer;
+    }
+    .filter-tag:hover {
+      background: #e4f0fb;
+    }
+    .filter-tag .x {
+      margin-left: 4px;
+      font-weight: 700;
+    }
+    .injury-panel {
+      margin: 0 0 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .injury-panel details {
+      width: 100%;
+    }
+    .injury-panel summary {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      background: #ecf2f8;
+      border-bottom: 1px solid var(--line);
+      cursor: pointer;
+      user-select: none;
+    }
+    .injury-panel summary::-webkit-details-marker {
+      display: none;
+    }
+    .injury-summary-count {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .injury-wrap {
+      padding: 8px 10px 10px;
+    }
+    .injury-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 0.82rem;
+    }
+    .injury-table th,
+    .injury-table td {
+      padding: 8px 8px;
+      border-bottom: 1px dashed #e3e9f0;
+      vertical-align: top;
+      text-align: left;
+    }
+    .injury-table th {
+      color: var(--muted);
+      font-size: 0.74rem;
+      letter-spacing: 0.01em;
+      font-weight: 700;
+      background: #f6f9fc;
+    }
+    .injury-table tbody tr:last-child td {
+      border-bottom: 0;
+    }
+    .injury-col-player { width: 32%; }
+    .injury-col-team { width: 28%; }
+    .injury-col-return { width: 20%; }
+    .injury-col-status { width: 20%; }
+    .injury-inline-btn {
+      border: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+    .injury-status-pill {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid #d9e2ea;
+      border-radius: 999px;
+      background: #f3f7fb;
+      color: #314d64;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      white-space: nowrap;
+    }
+    .injury-empty {
+      padding: 12px 8px;
+      color: #566c7f;
+      font-size: 0.84rem;
+      text-align: center;
+    }
+    .injury-tooltip {
+      position: fixed;
+      max-width: 320px;
+      background: #102231;
+      color: #f2f7fc;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+      padding: 8px 10px;
+      font-size: 0.76rem;
+      line-height: 1.35;
+      z-index: 60;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 90ms ease, transform 90ms ease;
+    }
+    .injury-tooltip.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .round {
+      scroll-margin-top: 84px;
+    }
+    .no-results {
+      border: 1px dashed #bfd1e2;
+      border-radius: var(--radius);
+      background: #f8fbfe;
+      padding: 18px;
+      color: #3e556a;
+      text-align: center;
+    }
+    .no-results p {
+      margin: 0 0 10px;
+    }
+    .no-results button {
+      height: 34px;
+      border: 1px solid #bdd2e4;
+      border-radius: 8px;
+      background: #f2f7fc;
+      color: #0f3f67;
+      font-size: 0.84rem;
+      font-weight: 600;
+      padding: 0 12px;
+      cursor: pointer;
+    }
+    mark {
+      background: #ffef9c;
+      color: inherit;
+      border-radius: 3px;
+      padding: 0 1px;
+    }
+    body.density-compact {
+      --li-pad-y: 4px;
+      --team-font-size: 0.84rem;
+      --player-font-size: 0.75rem;
+    }
+    body.density-compact .round h2 {
+      padding: 8px 10px;
+      font-size: 0.88rem;
+    }
+    @media (max-width: 900px) {
+      .controls {
+        grid-template-columns: 1fr 1fr;
+      }
+      .control-actions {
+        grid-column: 1 / -1;
+      }
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 14px 10px 24px; }
+      .controls {
+        position: static;
+        grid-template-columns: 1fr;
+      }
+      .control-actions {
+        grid-column: auto;
+      }
+      .rounds { grid-template-columns: 1fr; }
+      .injury-wrap {
+        padding: 0;
+      }
+      .injury-table thead {
+        display: none;
+      }
+      .injury-table,
+      .injury-table tbody,
+      .injury-table tr,
+      .injury-table td {
+        display: block;
+        width: 100%;
+      }
+      .injury-table tr {
+        border-bottom: 1px dashed #e3e9f0;
+        padding: 10px;
+      }
+      .injury-table tr:last-child {
+        border-bottom: 0;
+      }
+      .injury-table td {
+        border: 0;
+        padding: 2px 0;
+      }
+      .injury-table td::before {
+        content: attr(data-label);
+        display: block;
+        color: var(--muted);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+      }
+    }
