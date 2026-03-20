@@ -56,9 +56,13 @@
     </section>
 
     <section class="injury-panel" aria-label="Injury report">
-      <details id="injuryDetails" open>
+      <details id="injuryDetails">
         <summary>
-          <span>Injury Report</span>
+          <span class="injury-summary-main">
+            <span class="injury-toggle" aria-hidden="true"></span>
+            <span>Injury Report</span>
+            <span class="injury-summary-hint"></span>
+          </span>
           <span id="injurySummaryCount" class="injury-summary-count" aria-live="polite"></span>
         </summary>
         <div class="injury-wrap">

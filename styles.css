@@ -332,6 +332,44 @@
       cursor: pointer;
       user-select: none;
     }
+    .injury-summary-main {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+    .injury-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      border: 1px solid #c2d3e3;
+      background: #f4f8fc;
+      color: #264661;
+      font-size: 0.9rem;
+      line-height: 1;
+      font-weight: 700;
+      flex: 0 0 auto;
+    }
+    .injury-toggle::before {
+      content: "+";
+    }
+    .injury-panel details[open] .injury-toggle::before {
+      content: "-";
+    }
+    .injury-summary-hint {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .injury-summary-hint::before {
+      content: "Click to expand";
+    }
+    .injury-panel details[open] .injury-summary-hint::before {
+      content: "Click to collapse";
+    }
     .injury-panel summary::-webkit-details-marker {
       display: none;
     }
